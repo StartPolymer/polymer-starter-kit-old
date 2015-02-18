@@ -1,0 +1,22 @@
+# humanstxt.org
+# The humans responsible & technology colophon
+
+# TEAM
+
+Company:
+Developer:
+Site:
+From:
+
+# THANKS
+
+Names:       Google, GitHub
+
+# SITE
+
+Design:      Material Design from Google
+Library:     Polymer from Google
+Standards:   HTML5, CSS3, Web Components
+Tools:       Polymer Starter Kit, Jade, Sass, Autoprefixer, PageSpeed Insights
+Doctype:     HTML5
+Language:

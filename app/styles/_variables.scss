@@ -1,0 +1,39 @@
+// Material Design Colors
+// http://www.google.com/design/spec/style/color.html#color-color-palette
+$primary-color-name:    'indigo';
+$accent-color-name:     'pink';
+
+$primary-color:         material-color($primary-color-name, '500');
+$light-primary-color:   material-color($primary-color-name, '100');
+$dark-primary-color:    material-color($primary-color-name, '700');
+$text-primary-color:    #fff; // Icons color
+
+$accent-color:          material-color($accent-color-name, 'a200');
+$light-accent-color:    material-color($accent-color-name, 'a100'); // Fallback accent color
+$dark-accent-color:     material-color($accent-color-name, 'a400'); // Fallback accent color
+
+$primary-text-color:    material-color('grey', '900');
+$secondary-text-color:  material-color('grey', '600'); // Icons color
+$hint-text-color:       material-color('grey', '400'); // Disabled color
+$divider-color:         material-color('grey', '300');
+$background-color:      material-color('grey', '100');
+$alert-color:           material-color('red', '500');
+
+// H1 - H6
+$h1-font-size-base: 2em;
+$h1-margin-base: .67em 0;
+
+$h2-font-size-base: 1.5em;
+$h2-margin-base: .83em 0;
+
+$h3-font-size-base: 1.17em;
+$h3-margin-base: 1em 0;
+
+$h4-font-size-base: 1em;
+$h4-margin-base: 1.33em 0;
+
+$h5-font-size-base: .83em;
+$h5-margin-base: 1.67em 0;
+
+$h6-font-size-base: .75em;
+$h6-margin-base: 2.33em 0;

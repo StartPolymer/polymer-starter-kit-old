@@ -1,0 +1,34 @@
+extends layouts/default
+include includes/variables
+
+block content
+	template(is='auto-binding', id='app')
+		core-drawer-panel
+			// Drawer
+			core-header-panel(drawer)
+				// Drawer Toolbar
+				core-toolbar Menu
+				// Drawer Content
+				nav
+					core-selector(selected='0')
+						paper-item
+							core-icon(icon='custom-icons:polymer')
+							a(href='#') Polymer
+							paper-ripple(initialOpacity='1', fit)
+						paper-item
+							core-icon(icon='custom-icons:polymer')
+							a(href='#') Starter
+							paper-ripple(initialOpacity='1', fit)
+						paper-item
+							core-icon(icon='custom-icons:polymer')
+							a(href='#') Kit
+							paper-ripple(initialOpacity='1', fit)
+			// Main
+			core-header-panel(main)
+				// Main Toolbar
+				core-toolbar
+					paper-icon-button(icon='menu', core-drawer-toggle)
+					span {{appName}}
+				// Main Content with Markdown
+				main
+					include:md pages/home.md

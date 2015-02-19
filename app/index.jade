@@ -28,7 +28,13 @@ block content
         // Main Toolbar
         core-toolbar
           paper-icon-button(icon='menu', core-drawer-toggle)
-          span Polymer Starter Kit
+          span(flex) Polymer Starter Kit
+          a(href=github_url, target='_blank')
+            paper-icon-button(icon='custom-icons:github', title='GitHub Repo')
+          a(href=github_url + '/fork', target='_blank')
+            paper-icon-button(icon='custom-icons:fork', title='GitHub Fork')
+          a(href=github_url + '/issues', target='_blank')
+            paper-icon-button(icon='custom-icons:issue', title='GitHub Issues')
         // Main Content with Markdown
         main
           include:md pages/home.md

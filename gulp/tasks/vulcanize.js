@@ -7,6 +7,7 @@ module.exports = function (gulp, plugins, config) { return function () {
       dest: 'dist/elements',
       strip: true
     }))
+    .pipe(gulp.dest('dist/elements'))
     // Revving file
     .pipe(plugins.rev())
     .pipe(gulp.dest('dist/elements'))

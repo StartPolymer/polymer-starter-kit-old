@@ -11,6 +11,8 @@ Inspired by
 [Polymer generator](https://github.com/yeoman/generator-polymer) and
 [Gulp generator](https://github.com/yeoman/generator-gulp-webapp).
 
+[DEMO](https://polymer-starter-kit.startpolymer.org)
+
 ## Features
 
 - Using [Polymer Theme](https://github.com/StartPolymer/polymer-theme)
@@ -57,7 +59,7 @@ sudo gem install sass
 
 ```sh
 git clone <Fork of this repository>
-git clone ssh://github.com/<USER>/polymer-starter-kit
+git clone ssh://github.com/<username>/polymer-starter-kit
 ```
 
 [How to use Git](https://gist.github.com/JosefJezek/775e54583ef319c8c641)

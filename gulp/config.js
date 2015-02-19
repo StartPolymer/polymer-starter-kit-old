@@ -35,7 +35,7 @@ module.exports = {
   pageSpeed: {
     key: '', // need uncomment in task
     nokey: true,
-    site: 'https://polymer-starter-kit.startpolymer.org', // change it!
+    site: 'http://polymer-starter-kit.startpolymer.org', // change it!
     strategy: 'mobile' // or desktop
   }
 };

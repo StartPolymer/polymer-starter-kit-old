@@ -11,7 +11,7 @@ Inspired by
 [Polymer generator](https://github.com/yeoman/generator-polymer) and
 [Gulp generator](https://github.com/yeoman/generator-gulp-webapp).
 
-[DEMO](https://polymer-starter-kit.startpolymer.org)
+[DEMO](http://polymer-starter-kit.startpolymer.org)
 
 ## Features
 
@@ -139,4 +139,4 @@ npm install web-component-tester --save-dev
 
 ## [MIT License](https://github.com/StartPolymer/polymer-starter-kit/blob/master/LICENSE)
 
-Copyright (c) 2015 Start Polymer ([https://startpolymer.org](https://startpolymer.org))
+Copyright (c) 2015 Start Polymer ([http://startpolymer.org](http://startpolymer.org))

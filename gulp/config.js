@@ -24,6 +24,7 @@ module.exports = {
   // GitHub Pages
   ghPages: {
     branch: 'gh-pages',
+    domain: 'polymer-starter-kit.startpolymer.org', // change it!
     origin: 'origin'
   },
   // PageSpeed Insights
@@ -34,7 +35,7 @@ module.exports = {
   pageSpeed: {
     key: '', // need uncomment in task
     nokey: true,
-    site: 'https://startpolymer.org', // change it
+    site: 'https://polymer-starter-kit.startpolymer.org', // change it!
     strategy: 'mobile' // or desktop
   }
 };

@@ -11,10 +11,16 @@ module.exports = function (gulp, plugins, config) { return function () {
         dot: true
       }).pipe(gulp.dest('dist')),
 
-    gulp.src('bower_components/**/*')
+    gulp.src([
+      'bower_components/**/*.{css,html,js}',
+      '!bower_components/**/{demo,index,metadata}.html'
+      ])
       .pipe(gulp.dest('dist/bower_components')),
 
-    gulp.src('.tmp/elements/**/*.html')
+    gulp.src([
+      '.tmp/elements/**/*.html',
+      '!.tmp/elements/elements.html'
+      ])
       .pipe(gulp.dest('dist/elements')),
 
     gulp.src('.tmp/elements/elements.html')

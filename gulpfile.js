@@ -80,8 +80,8 @@ gulp.task('default', ['clean'], function (cb) {
     ['jshint', 'images', 'fonts', 'html', 'elements'],
     'vulcanize',
     'revreplace',
-    'gzip',
-    'build-size',
+//    'gzip',
+//    'build-size',
     cb);
 });
 

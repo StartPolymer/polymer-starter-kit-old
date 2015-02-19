@@ -11,6 +11,8 @@ Inspired by
 [Polymer generator](https://github.com/yeoman/generator-polymer) and
 [Gulp generator](https://github.com/yeoman/generator-gulp-webapp).
 
+Following [The 10 Commandments of Modern Web Application](https://gist.github.com/JosefJezek/8020bd8f02c4992e7d7d)
+
 [DEMO](http://polymer-starter-kit.startpolymer.org)
 
 ## Features

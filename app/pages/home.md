@@ -54,6 +54,6 @@ Custom SVG icon <core-icon icon="custom-icons:polymer"></core-icon>
 
 ## Links
 
-[Markdown Cheatsheet](https://gist.github.com/JosefJezek/39674d315b0f518cbb53)
+[Markdown Cheat Sheet](https://gist.github.com/JosefJezek/39674d315b0f518cbb53)
 
 https://startpolymer.org

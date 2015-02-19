@@ -2,7 +2,8 @@
 
 Polymer Starter Kit is a boilerplate for web development using Web Components and modern tools.
 
-Fork this repository if you want to start your own application using Polymer.
+[Fork](https://github.com/StartPolymer/polymer-starter-kit/fork)
+this repository if you want to start your own application using Polymer.
 
 Inspired by
 [Web Starter Kit](https://github.com/google/web-starter-kit),
@@ -46,11 +47,9 @@ sudo npm install -g bower gulp npm
 sudo gem install sass
 ```
 
-For installation great [Atom](https://atom.io) editor with
-[ungit](https://atom.io/packages/atom-ungit) is
-[Atom on Ubuntu](https://gist.github.com/6d7386cb7011cc8f5d37) script.
-
-For other OS, you can use [Ubuntu VM Image](http://www.osboxes.org/ubuntu/) :wink:
+- [Atom](https://atom.io) is great editor for web development, you can use
+[Atom on Ubuntu](https://gist.github.com/JosefJezek/6d7386cb7011cc8f5d37) script.
+- For other OS, you can use [Ubuntu VM Image](http://www.osboxes.org/ubuntu/) or Google Search :wink:
 
 ## Usage
 
@@ -58,7 +57,10 @@ For other OS, you can use [Ubuntu VM Image](http://www.osboxes.org/ubuntu/) :win
 
 ```sh
 git clone <Fork of this repository>
+git clone ssh://github.com/<USER>/polymer-starter-kit
 ```
+
+[How to use Git](https://gist.github.com/JosefJezek/775e54583ef319c8c641)
 
 ### Install dependencies
 

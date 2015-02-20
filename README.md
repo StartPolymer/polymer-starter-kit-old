@@ -2,9 +2,6 @@
 
 Polymer Starter Kit is a boilerplate for web development using Web Components and modern tools.
 
-[Fork](https://github.com/StartPolymer/polymer-starter-kit/fork)
-this repository if you want to start your own application using Polymer.
-
 Inspired by
 [Web Starter Kit](https://github.com/google/web-starter-kit),
 [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate),
@@ -57,11 +54,16 @@ sudo gem install sass
 
 ## Usage
 
-### Clone fork of this repository
+### Clone this repository to separate branch `psk`
 
 ```sh
-git clone <Fork of this repository>
-git clone ssh://github.com/<username>/polymer-starter-kit
+git clone https://github.com/StartPolymer/polymer-starter-kit.git <my-repo-name>
+cd <my-repo-name>
+git branch -m psk
+git checkout -b master
+git remote rename origin psk
+git remote add origin https://github.com/<user>/<my-repo-name>.git
+git push -u origin master
 ```
 
 [How to use Git](https://gist.github.com/JosefJezek/775e54583ef319c8c641)
@@ -138,6 +140,16 @@ for integrating other popular technologies like CoffeeScript. Or this a
 bower install web-component-tester --save-dev
 npm install web-component-tester --save-dev
 ```
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Make your changes
+4. Run the tests, adding new ones for your own code if necessary
+5. Commit your changes (`git commit -am 'Added some feature'`)
+6. Push to the branch (`git push origin my-new-feature`)
+7. Create new Pull Request
 
 ## [MIT License](https://github.com/StartPolymer/polymer-starter-kit/blob/master/LICENSE)
 

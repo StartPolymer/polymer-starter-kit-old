@@ -25,7 +25,7 @@ module.exports = {
   ghPages: {
     branch: 'gh-pages',
     domain: 'polymer-starter-kit.startpolymer.org', // change it!
-    origin: 'origin2' // default is 'origin'
+    origin: 'origin'
   },
   // PageSpeed Insights
   // Please feel free to use the `nokey` option to try out PageSpeed

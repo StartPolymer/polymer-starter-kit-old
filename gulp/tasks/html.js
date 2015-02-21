@@ -23,10 +23,10 @@ module.exports = function (gulp, plugins, config) { return function () {
     .pipe(plugins.revReplace())
     // Minify Any HTML
     .pipe(plugins.if('*.html', plugins.minifyHtml({
-      empty: true,	// KEEP empty attributes
-      loose: true,	// KEEP one whitespace
-      quotes: true,	// KEEP arbitrary quotes
-      spare: true		// KEEP redundant attributes
+      empty: true,  // KEEP empty attributes
+      loose: true,  // KEEP one whitespace
+      quotes: true, // KEEP arbitrary quotes
+      spare: true   // KEEP redundant attributes
     })))
     // Output Files
     .pipe(gulp.dest('dist'))

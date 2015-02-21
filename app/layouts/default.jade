@@ -43,8 +43,10 @@ html(lang=lang)
     // endbower
     // endbuild
 
+    // Shimming styles outside of polymer-element
+    // https://www.polymer-project.org/docs/polymer/styling.html#sdcss
     // build:css /styles/main.css
-    link(rel='stylesheet', href='/styles/main.css')
+    link(rel='stylesheet', href='/styles/main.css', shim-shadowdom)
     // endbuild
 
     // build:js /bower_components/webcomponentsjs/webcomponents.min.js

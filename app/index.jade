@@ -8,7 +8,8 @@ block content
       core-header-panel(drawer)
         // Drawer Toolbar
         core-toolbar Menu
-        // Drawer Content
+        // Navigation links
+        // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav
         nav
           core-selector(selected='0')
             paper-item
@@ -28,13 +29,17 @@ block content
         // Main Toolbar
         core-toolbar
           paper-icon-button(icon='menu', core-drawer-toggle)
-          span(flex) Polymer Starter Kit
+          span(flex)= title
+          // Markdown Button
+          a(href=stackedit_url + 'home.md', target='_blank')
+            paper-icon-button(icon='custom-icons:markdown', title='Markdown source')
+          // GitHub Buttons
           a(href=github_url, target='_blank')
-            paper-icon-button(icon='custom-icons:github', title='GitHub Repo')
+            paper-icon-button(icon='custom-icons:github-mark', title='GitHub Repo')
           a(href=github_url + '/fork', target='_blank')
-            paper-icon-button(icon='custom-icons:fork', title='GitHub Fork')
+            paper-icon-button(icon='custom-icons:github-fork', title='GitHub Fork')
           a(href=github_url + '/issues', target='_blank')
-            paper-icon-button(icon='custom-icons:issue', title='GitHub Issues')
+            paper-icon-button(icon='custom-icons:github-issue', title='GitHub Issues')
         // Main Content with Markdown
         main
           include:md pages/home.md

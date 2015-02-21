@@ -1,12 +1,12 @@
-# {{h1}}
-
-## &lt;h2&gt;
-
-### &lt;h3&gt;
+# Markdown
 
 ---
 
 *italic* **bold** ~~strikethrough~~
+
+## Properties
+
+{{property}}
 
 ## List
 
@@ -32,7 +32,7 @@ alert(s);
 
 ## Inline HTML
 
-Custom SVG icon <core-icon icon="custom-icons:polymer"></core-icon>
+Custom SVG icon <core-icon icon="custom-icons:markdown"></core-icon>
 
 <p>Paragraph with &lt;p&gt; element</p>
 
@@ -54,6 +54,8 @@ Custom SVG icon <core-icon icon="custom-icons:polymer"></core-icon>
 
 ## Links
 
-[Markdown Cheat Sheet](https://gist.github.com/JosefJezek/39674d315b0f518cbb53)
+- [Top](#top)
+- [CommonMark](http://commonmark.org)
+- [Markdown Cheat Sheet](https://gist.github.com/JosefJezek/39674d315b0f518cbb53)
 
 http://startpolymer.org

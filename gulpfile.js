@@ -90,7 +90,7 @@ gulp.task('default', ['clean'], function (cb) {
 // ------------
 
 // Deploy to GitHub Pages
-gulp.task('deploy:gh', getTask('deploy-github-pages'));
+gulp.task('deploy:gh', ['default'], getTask('deploy-github-pages'));
 
 
 // Tool Tasks

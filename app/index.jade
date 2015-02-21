@@ -12,18 +12,15 @@ block content
         // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav
         nav
           core-selector(selected='0')
-            paper-item
-              core-icon(icon='custom-icons:polymer')
-              a(href='#') Polymer
-              paper-ripple(initialOpacity='1', fit)
-            paper-item
-              core-icon(icon='custom-icons:polymer')
-              a(href='#') Starter
-              paper-ripple(initialOpacity='1', fit)
-            paper-item
-              core-icon(icon='custom-icons:polymer')
-              a(href='#') Kit
-              paper-ripple(initialOpacity='1', fit)
+            paper-item(noink)
+              core-icon(icon='expand-less')
+              a(href='#top') Top
+            paper-item(noink)
+              core-icon(icon='av:videocam')
+              a(href='#youtube-video') Youtube video
+            paper-item(noink)
+              core-icon(icon='link')
+              a(href='#links') Links
       // Main
       core-header-panel(main)
         // Main Toolbar
@@ -42,4 +39,5 @@ block content
             paper-icon-button(icon='custom-icons:github-issue', title='GitHub Issues')
         // Main Content with Markdown
         main
+          a(id='top')
           include:md pages/home.md

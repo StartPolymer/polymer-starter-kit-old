@@ -4,7 +4,7 @@
 var gulp = require('gulp');
 var plugins = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
-var config = require('./gulp/config');
+var config = require('./gulp/psk-config');
 
 // Get a task from the tasks directory with default parameters
 function getTask(task) {

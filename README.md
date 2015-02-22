@@ -15,7 +15,7 @@ Following [The 10 Commandments of Modern Web Application](https://gist.github.co
 ## Features
 
 - Using [Polymer Theme](https://github.com/StartPolymer/polymer-theme)
-- [Custom Icons](https://github.com/StartPolymer/polymer-starter-kit/blob/master/app/elements/custom-icons/custom-icons.jade) element
+- [Custom Icons](https://github.com/StartPolymer/polymer-starter-kit/blob/master/app/elements/custom-icons/psk-custom-icons.jade) element
 - [Sass](http://sass-lang.com) CSS preprocessor with [Ruby](https://www.ruby-lang.org)
 - [Jade](http://jade-lang.com) HTML template engine
 - [Markdown](https://help.github.com/articles/github-flavored-markdown/) support with [marked](https://github.com/chjj/marked)
@@ -76,9 +76,9 @@ bower install && npm install
 
 ### Check variables
 
-- Gulp variables are in the file [gulp/config.js](https://github.com/StartPolymer/polymer-starter-kit/blob/master/gulp/config.js)
-- Jade variables are in the file [app/includes/variables.jade](https://github.com/StartPolymer/polymer-starter-kit/blob/master/app/includes/variables.jade)
-- Sass variables are in the file [app/styles/_variables.scss](https://github.com/StartPolymer/polymer-starter-kit/blob/master/app/styles/_variables.scss)
+- Gulp variables are in the file [gulp/config.js](https://github.com/StartPolymer/polymer-starter-kit/blob/master/gulp/psk-config.js)
+- Jade variables are in the file [app/includes/variables.jade](https://github.com/StartPolymer/polymer-starter-kit/blob/master/app/includes/psk-variables.jade)
+- Sass variables are in the file [app/styles/_variables.scss](https://github.com/StartPolymer/polymer-starter-kit/blob/master/app/styles/_psk-variables.scss)
 
 ### Serve to local and external URL
 

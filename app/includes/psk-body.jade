@@ -1,0 +1,59 @@
+body(class=theme unresolved)
+  template(is='auto-binding', id='app')
+    core-drawer-panel
+      // Drawer
+      core-header-panel(drawer)
+        // Drawer Toolbar
+        core-toolbar
+          core-icon(icon='custom-icons:start-polymer')
+          = title
+        // Navigation links
+        // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav
+        nav
+          core-selector(selected='0')
+            paper-item
+              a(href='#top', layout, horizontal, center)
+                // Hack for fit <a> element
+                // https://github.com/Polymer/paper-item/issues/14
+                span(fit)
+                core-icon(icon='expand-less')
+                | Top
+            paper-item
+              a(href='#youtube-video', layout, horizontal, center)
+                span(fit)
+                core-icon(icon='polymer')
+                | Youtube video
+            paper-item
+              a(href='#links', layout, horizontal, center)
+                span(fit)
+                core-icon(icon='link')
+                | Links
+      // Main
+      core-header-panel(main)
+        // Main Toolbar
+        core-toolbar
+          paper-icon-button(icon='menu', core-drawer-toggle)
+          span(flex)
+          // Markdown Button
+          a(href=stackedit_url + 'psk.md', target='_blank')
+            paper-icon-button(icon='custom-icons:markdown', title='Markdown source')
+          // GitHub Buttons
+          a(href=github_url, target='_blank')
+            paper-icon-button(icon='custom-icons:github-mark', title='GitHub Repo')
+          a(href=github_url + '/fork', target='_blank')
+            paper-icon-button(icon='custom-icons:github-fork', title='GitHub Fork')
+          a(href=github_url + '/issues', target='_blank')
+            paper-icon-button(icon='custom-icons:github-issue', title='GitHub Issues')
+        // Main Content with Markdown
+        main
+          a(id='top')
+          include:md ../pages/psk.md
+
+  // build:js /scripts/vendor.js
+  // bower:js
+  // endbower
+  // endbuild
+  
+  // build:js /scripts/app.js
+  script(src='/scripts/psk-app.js')
+  // endbuild

@@ -1,47 +1,7 @@
 extends layouts/default
-include includes/variables
 
-block content
-  template(is='auto-binding', id='app')
-    core-drawer-panel
-      // Drawer
-      core-header-panel(drawer)
-        // Drawer Toolbar
-        core-toolbar Menu
-        // Navigation links
-        // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav
-        nav
-          core-selector(selected='0')
-            paper-item(noink)
-              a(href='#top')
-                core-icon(icon='expand-less')
-                | Top
-            paper-item(noink)
-              a(href='#youtube-video')
-                core-icon(icon='av:videocam')
-                | Youtube video
-            paper-item(noink)
-              a(href='#links')
-                core-icon(icon='link')
-                | Links
-      // Main
-      core-header-panel(main)
-        // Main Toolbar
-        core-toolbar
-          paper-icon-button(icon='menu', core-drawer-toggle)
-          core-icon(icon='custom-icons:start-polymer')
-          span(flex)= title
-          // Markdown Button
-          a(href=stackedit_url + 'home.md', target='_blank')
-            paper-icon-button(icon='custom-icons:markdown', title='Markdown source')
-          // GitHub Buttons
-          a(href=github_url, target='_blank')
-            paper-icon-button(icon='custom-icons:github-mark', title='GitHub Repo')
-          a(href=github_url + '/fork', target='_blank')
-            paper-icon-button(icon='custom-icons:github-fork', title='GitHub Fork')
-          a(href=github_url + '/issues', target='_blank')
-            paper-icon-button(icon='custom-icons:github-issue', title='GitHub Issues')
-        // Main Content with Markdown
-        main
-          a(id='top')
-          include:md pages/home.md
+block head
+  include includes/psk-head
+
+block body
+  include includes/psk-body

@@ -1,0 +1,86 @@
+@import 'bower_components/polymer-theme/sass/modules/all';
+
+// Roboto Font Combinations
+$heading-font-name:     'roboto-slab';
+$font-lang:             'en';
+$heading-font:          roboto-font($heading-font-name, 'heading');
+$body-font:             roboto-font($heading-font-name, 'body');
+@import url(roboto-font($heading-font-name, 'url') + '&lang=' + $font-lang);
+
+.polymer-theme {
+  @import 'psk-variables';
+
+  color: $primary-text-color;
+  font-family: $body-font;
+
+  h1,
+  h2,
+  h3 {
+    font-family: $heading-font;
+  }
+
+  h1 {
+    font-size: $h1-font-size-base;
+    margin: $h1-margin-base;
+  }
+
+  h2 {
+    font-size: $h2-font-size-base;
+    margin: $h2-margin-base;
+  }
+
+  h3 {
+    font-size: $h3-font-size-base;
+    margin: $h3-margin-base;
+  }
+
+  h4 {
+    font-size: $h4-font-size-base;
+    margin: $h4-margin-base;
+  }
+
+  h5 {
+    font-size: $h5-font-size-base;
+    margin: $h5-margin-base;
+  }
+
+  h6 {
+    font-size: $h6-font-size-base;
+    margin: $h6-margin-base;
+  }
+
+  /deep/ {
+    @import 'bower_components/polymer-theme/sass/elements/all';
+
+    a {
+      color: currentcolor;
+      text-decoration: none;
+    }
+  }
+
+  [drawer] {
+    background-color: $background-color;
+
+    paper-item {
+      transition: all 500ms ease-in-out;
+
+      &.core-selected {
+        color: $text-primary-color;
+      }
+    }
+  }
+
+  main {
+    padding-left: 30px;
+
+    a {
+      color: $dark-primary-color;
+    }
+
+    core-icon[icon="custom-icons:markdown"] {
+      color: $primary-color;
+      height: 50px;
+      width: 50px;
+    }
+  }
+}

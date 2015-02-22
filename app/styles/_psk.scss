@@ -71,10 +71,17 @@ $body-font:             roboto-font($heading-font-name, 'body');
   }
 
   main {
-    padding-left: 30px;
+    padding: 0 20px;
 
     a {
       color: $dark-primary-color;
+    }
+
+    // CSS Fluid Image
+    // http://demosthenes.info/blog/586/CSS-Fluid-Image-Techniques-for-Responsive-Site-Design
+    img {
+      height: auto;
+      max-width: 100%;
     }
 
     core-icon[icon="custom-icons:markdown"] {

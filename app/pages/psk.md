@@ -1,4 +1,4 @@
-# <core-icon icon="custom-icons:start-polymer"></core-icon> Polymer Starter Kit
+# Polymer Starter Kit
 
 ---
 

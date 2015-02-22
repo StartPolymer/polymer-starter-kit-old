@@ -76,9 +76,9 @@ bower install && npm install
 
 ### Check variables
 
-- Gulp variables are in the file [gulp/config.js](https://github.com/StartPolymer/polymer-starter-kit/blob/master/gulp/psk-config.js)
-- Jade variables are in the file [app/includes/variables.jade](https://github.com/StartPolymer/polymer-starter-kit/blob/master/app/includes/psk-variables.jade)
-- Sass variables are in the file [app/styles/_variables.scss](https://github.com/StartPolymer/polymer-starter-kit/blob/master/app/styles/_psk-variables.scss)
+- Gulp variables are in the file [gulp/psk-config.js](https://github.com/StartPolymer/polymer-starter-kit/blob/master/gulp/psk-config.js)
+- Jade variables are in the file [app/includes/psk-variables.jade](https://github.com/StartPolymer/polymer-starter-kit/blob/master/app/includes/psk-variables.jade)
+- Sass variables are in the file [app/styles/_psk-variables.scss](https://github.com/StartPolymer/polymer-starter-kit/blob/master/app/styles/_psk-variables.scss)
 
 ### Serve to local and external URL
 

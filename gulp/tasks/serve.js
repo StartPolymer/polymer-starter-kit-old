@@ -20,9 +20,8 @@ module.exports = function (gulp, config, browserSync) { return function () {
   // watch for changes
   gulp.watch([
     'app/**/*.html',
-    '.tmp/*.html',
-    '.tmp/styles/**/*.css',
-    '.tmp/elements/**/*.css',
+    '.tmp/**/*.html',
+    '.tmp/{styles,elements}/**/*.css',
     'app/images/**/*',
     '.tmp/fonts/**/*'
   ]).on('change', reload);
@@ -30,8 +29,7 @@ module.exports = function (gulp, config, browserSync) { return function () {
   gulp.watch('app/**/*.{jade,md}', ['jade', reload]);
   gulp.watch('app/styles/**/*.scss', ['styles', reload]);
   gulp.watch('app/elements/**/*.scss', ['elements', reload]);
-  gulp.watch('app/scripts/**/*.js', ['jshint', reload]);
-  gulp.watch('app/elements/**/*.js', ['jshint', reload]);
+  gulp.watch('app/{scripts,elements}/**/*.js', ['jshint', reload]);
   gulp.watch('app/fonts/**/*', ['fonts']);
   gulp.watch('bower.json', ['wiredep', 'fonts']);
 };};

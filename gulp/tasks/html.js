@@ -19,6 +19,9 @@ module.exports = function (gulp, plugins, config) { return function () {
     .pipe(plugins.revAll())
     .pipe(assets.restore())
     .pipe(plugins.useref())
+    // Add shim-shadowdom to link with main.css
+    .pipe(plugins.if('*.html', plugins.replace(
+      'main.css">', 'main.css" shim-shadowdom>')))
     // Updating all references to revved files
     .pipe(plugins.revReplace())
     // Minify Any HTML

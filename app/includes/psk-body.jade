@@ -1,59 +1,57 @@
-body(class=theme unresolved)
-  template(is='auto-binding', id='app')
-    // Use CSS media queries for responsiveness
-    // https://developers.google.com/web/fundamentals/layouts/rwd-fundamentals/use-media-queries
-    core-media-query(query='max-width: 640px', querymatches='{{isPhoneSize}}')   
-    
-    core-drawer-panel
-      // Drawer
-      core-header-panel(drawer)
-        // Drawer Toolbar
+body(class=theme, unresolved): template#app(is='auto-binding')
+  // Use CSS media queries for responsiveness
+  // https://developers.google.com/web/fundamentals/layouts/rwd-fundamentals/use-media-queries
+  core-media-query(query='max-width: 640px', querymatches='{{isPhoneSize}}')   
+  
+  core-drawer-panel
+    // Drawer
+    core-header-panel(drawer)
+      // Drawer Toolbar
+      core-toolbar
+        span(hidden?='{{isPhoneSize}}')
+          core-icon(icon='custom-icons:start-polymer')
+          = title
+        span(hidden?='{{!isPhoneSize}}') Menu
+      // Navigation links
+      // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav
+      nav: core-selector(selected='0')
+        paper-item
+          a(href='#top', layout, horizontal, center)
+            // Hack for fit <a> element
+            // https://github.com/Polymer/paper-item/issues/14
+            span(fit)
+            core-icon(icon='expand-less')
+            | Top
+        paper-item
+          a(href='#youtube-video', layout, horizontal, center)
+            span(fit)
+            core-icon(icon='av:videocam')
+            | Youtube video
+        paper-item
+          a(href='#links', layout, horizontal, center)
+            span(fit)
+            core-icon(icon='link')
+            | Links
+      div.external-links(hidden?='{{!isPhoneSize}}', layout, horizontal, center-center)
+        include psk-external-links
+                
+    // Main
+    core-header-panel(main)
+      header
+        // Main Toolbar
         core-toolbar
+          span(flex)
+            span(hidden?='{{!isPhoneSize}}')
+              core-icon(icon='custom-icons:start-polymer')
+              = title
+          paper-icon-button(icon='menu', core-drawer-toggle)
           span(hidden?='{{isPhoneSize}}')
-            core-icon(icon='custom-icons:start-polymer')
-            = title
-          span(hidden?='{{!isPhoneSize}}') Menu
-        // Navigation links
-        // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav
-        nav
-          core-selector(selected='0')
-            paper-item
-              a(href='#top', layout, horizontal, center)
-                // Hack for fit <a> element
-                // https://github.com/Polymer/paper-item/issues/14
-                span(fit)
-                core-icon(icon='expand-less')
-                | Top
-            paper-item
-              a(href='#youtube-video', layout, horizontal, center)
-                span(fit)
-                core-icon(icon='av:videocam')
-                | Youtube video
-            paper-item
-              a(href='#links', layout, horizontal, center)
-                span(fit)
-                core-icon(icon='link')
-                | Links
-        div.external-links(hidden?='{{!isPhoneSize}}' layout horizontal center-center)
-          include psk-external-links
-                  
-      // Main
-      core-header-panel(main)
-        header
-          // Main Toolbar
-          core-toolbar
-            span(flex)
-              span(hidden?='{{!isPhoneSize}}')
-                core-icon(icon='custom-icons:start-polymer')
-                = title
-            paper-icon-button(icon='menu', core-drawer-toggle)
-            span(hidden?='{{isPhoneSize}}')
-              include psk-external-links
-        // Main Content with Markdown
-        main
-          a(id='top')
-          include:md ../pages/psk.md
-        footer
+            include psk-external-links
+      // Main Content with Markdown
+      main
+        a(id='top')
+        include:md ../pages/psk.md
+      footer
 
   // build:js /scripts/vendor.js
   // bower:js

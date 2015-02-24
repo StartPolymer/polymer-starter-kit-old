@@ -20,14 +20,15 @@ Following [The 10 Commandments of Modern Web Application](https://gist.github.co
 - [Jade](http://jade-lang.com) HTML template engine
  - PSK need template engine for [Static Web Applications](http://www.staticapps.org)
  - Jade have [variables](http://naltatis.github.io/jade-syntax-docs/#variables),
-[includes](http://jade-lang.com/reference/includes/),
-[extends](http://jade-lang.com/reference/extends/),
-[mixins](http://jade-lang.com/reference/mixins/) and other features
+ [includes](http://jade-lang.com/reference/includes/),
+ [extends](http://jade-lang.com/reference/extends/),
+ [mixins](http://jade-lang.com/reference/mixins/) and other features
  - Check out the [index.jade](https://github.com/StartPolymer/polymer-starter-kit/blob/master/app/index.jade),
-[includes](https://github.com/StartPolymer/polymer-starter-kit/tree/master/app/includes) and
-[layouts](https://github.com/StartPolymer/polymer-starter-kit/tree/master/app/layouts)
+ [psk-variables.jade](https://github.com/StartPolymer/polymer-starter-kit/blob/master/app/includes/psk-variables.jade),
+ [includes](https://github.com/StartPolymer/polymer-starter-kit/tree/master/app/includes) and
+ [layouts](https://github.com/StartPolymer/polymer-starter-kit/tree/master/app/layouts)
  - [Learning Jade with Codecast](http://cssdeck.com/labs/learning-the-jade-templating-engine-syntax)
- - [How to disable Jade](https://github.com/StartPolymer/polymer-starter-kit/wiki/How-to-disable-Jade) for any developers
+ - [How to replace or disable Jade](https://github.com/StartPolymer/polymer-starter-kit/wiki) for any developers
 - [Markdown](https://help.github.com/articles/github-flavored-markdown/) support with [marked](https://github.com/chjj/marked)
 - [Autoprefixer](https://github.com/postcss/autoprefixer) for CSS
 - [Asset revisioning](https://github.com/smysnk/gulp-rev-all)
@@ -37,6 +38,7 @@ for avoiding the overhead of on-the-fly compression on server
 - [PageSpeed Insights](https://developers.google.com/speed/docs/insights/about) for performance tuning
 - Built-in preview server with [BrowserSync](http://www.browsersync.io)
 - Automagically wire-up dependencies installed with [Bower](http://bower.io)
+- [Vulcanize with Content Security Policy](https://github.com/Polymer/vulcanize#content-security-policy)
 - [web-component-tester](https://github.com/Polymer/web-component-tester) support
 - Quick deploy to [CDN](http://en.wikipedia.org/wiki/Content_delivery_network) Hosting
  - [GitHub Pages](https://pages.github.com) - [more info](https://github.com/blog/1715-faster-more-awesome-github-pages)

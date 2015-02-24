@@ -2,7 +2,7 @@
 
 // Copy All Files At The Root Level (app)
 module.exports = function (gulp, plugins, config) { return function () {
-  var path = '.tmp'; // '.tmp' for Jade, 'app' for disabled Jade
+  var rootDir = '.tmp'; // '.tmp' for Jade, 'app' for disabled Jade
 
   return require('merge-stream')(
     gulp.src([
@@ -20,12 +20,12 @@ module.exports = function (gulp, plugins, config) { return function () {
       .pipe(gulp.dest('dist/bower_components')),
 
     gulp.src([
-      path + '/elements/**/*.html',
-      '!' + path + '/elements/elements.html'
+      rootDir + '/elements/**/*.html',
+      '!' + rootDir + '/elements/elements.html'
       ])
       .pipe(gulp.dest('dist/elements')),
 
-    gulp.src(path + '/elements/elements.html')
+    gulp.src(rootDir + '/elements/elements.html')
       .pipe(plugins.rename('elements.vulcanized.html'))
       .pipe(gulp.dest('dist/elements')),
 

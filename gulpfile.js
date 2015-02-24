@@ -26,14 +26,14 @@ gulp.task('html', getTask('html'));
 // Optimize Images
 gulp.task('images', getTask('images'));
 
-// Jade
-gulp.task('jade', getTask('jade'));
-
 // Lint JavaScript
 gulp.task('jshint', require('./gulp/tasks/jshint')(gulp, plugins, browserSync));
 
 // Compile and Automatically Prefix Stylesheets
 gulp.task('styles', getTask('styles'));
+
+// Views with Jade
+gulp.task('views', getTask('jade'));
 
 // Inject bower components
 gulp.task('wiredep', getTask('wiredep'));
@@ -44,7 +44,7 @@ gulp.task('wiredep', getTask('wiredep'));
 
 // Watch Files For Changes & Reload
 gulp.task('serve', [
-    'jade',
+    'views',
     'styles',
     'elements',
     'fonts'
@@ -80,7 +80,7 @@ gulp.task('vulcanize', getTask('vulcanize'));
 // Build Production Files, the Default Task
 gulp.task('default', ['clean'], function (cb) {
   require('run-sequence')(
-    'jade',
+    'views',
     ['copy', 'styles'],
     ['jshint', 'images', 'fonts', 'html', 'elements'],
     'vulcanize',

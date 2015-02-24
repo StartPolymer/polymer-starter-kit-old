@@ -43,7 +43,12 @@ gulp.task('wiredep', getTask('wiredep'));
 // -----------
 
 // Watch Files For Changes & Reload
-gulp.task('serve', ['jade', 'styles', 'elements', 'fonts'],
+gulp.task('serve', [
+    'jade',
+    'styles',
+    'elements',
+    'fonts'
+  ],
   require('./gulp/tasks/serve')(gulp, config, browserSync));
 
 // Build and serve the output from the dist build

@@ -33,7 +33,7 @@ gulp.task('jshint', require('./gulp/tasks/jshint')(gulp, plugins, browserSync));
 gulp.task('styles', getTask('styles'));
 
 // Views with Jade
-gulp.task('views', getTask('jade'));
+gulp.task('views', getTask('views-jade'));
 
 // Inject bower components
 gulp.task('wiredep', getTask('wiredep'));

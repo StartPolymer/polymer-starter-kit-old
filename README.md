@@ -10,7 +10,7 @@ Inspired by
 
 Following [The 10 Commandments of Modern Web Application](https://gist.github.com/JosefJezek/8020bd8f02c4992e7d7d)
 
-[DEMO](http://polymer-starter-kit.startpolymer.org)
+:sparkles: [DEMO](http://polymer-starter-kit.startpolymer.org) :sparkles:
 
 ## Features
 
@@ -112,7 +112,7 @@ gulp serve:dist
 gulp
 ```
 
-## Deploy
+## Deploy :tada:
 
 ### Deploy to GitHub Pages
 
@@ -153,7 +153,7 @@ bower install web-component-tester --save-dev
 npm install web-component-tester --save-dev
 ```
 
-## Contributing
+## Contributing :+1:
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)

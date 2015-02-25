@@ -16,13 +16,20 @@ Following [The 10 Commandments of Modern Web Application](https://gist.github.co
 
 - Using [Polymer Theme](https://github.com/StartPolymer/polymer-theme)
 - [Custom Icons](https://github.com/StartPolymer/polymer-starter-kit/blob/master/app/elements/custom-icons/psk-custom-icons.jade) element
-- [Sass](http://sass-lang.com) CSS preprocessor with [Ruby](https://www.ruby-lang.org)
+- [Sass](http://sass-lang.com) CSS Preprocessor with [Ruby](https://www.ruby-lang.org)
+ - PSK need CSS Preprocessor for [Variables](http://sass-guidelin.es/#variables),
+ [Loops](http://sass-guidelin.es/#loops),
+ [Mixins](http://sass-guidelin.es/#mixins) and other features
+ - [LibSass](http://libsass.org) is a C/C++ port of the Sass engine
+   - [Replace Ruby Sass with LibSass](https://github.com/StartPolymer/polymer-starter-kit/issues/2) Issue
+ - SCSS have CSS like syntax
+ - Check out the [styles](https://github.com/StartPolymer/polymer-starter-kit/tree/master/app/styles) dir
 - [Jade](http://jade-lang.com) HTML template engine
  - PSK need template engine for [Static Web Applications](http://www.staticapps.org)
- - Jade have [variables](http://naltatis.github.io/jade-syntax-docs/#variables),
- [includes](http://jade-lang.com/reference/includes/),
- [extends](http://jade-lang.com/reference/extends/),
- [mixins](http://jade-lang.com/reference/mixins/) and other features
+ - Jade have [Variables](http://jade-lang.com/reference/code/),
+ [Includes](http://jade-lang.com/reference/includes/),
+ [Extends](http://jade-lang.com/reference/extends/),
+ [Mixins](http://jade-lang.com/reference/mixins/) and other features
  - Check out the [index.jade](https://github.com/StartPolymer/polymer-starter-kit/blob/master/app/index.jade),
  [psk-variables.jade](https://github.com/StartPolymer/polymer-starter-kit/blob/master/app/includes/psk-variables.jade),
  [includes](https://github.com/StartPolymer/polymer-starter-kit/tree/master/app/includes) and
@@ -86,7 +93,7 @@ git push -u origin master
 bower install && npm install
 ```
 
-### Check variables
+### Check out the variables
 
 - Gulp variables are in the file [gulp/psk-config.js](https://github.com/StartPolymer/polymer-starter-kit/blob/master/gulp/psk-config.js)
 - Jade variables are in the file [app/includes/psk-variables.jade](https://github.com/StartPolymer/polymer-starter-kit/blob/master/app/includes/psk-variables.jade)

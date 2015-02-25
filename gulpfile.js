@@ -14,9 +14,6 @@ function getTask(task) {
 // Tasks
 // -----
 
-// Compile and Automatically Prefix Stylesheets for elements
-gulp.task('elements', getTask('elements'));
-
 // Copy Web Fonts To Dist
 gulp.task('fonts', getTask('fonts'));
 
@@ -30,7 +27,12 @@ gulp.task('images', getTask('images'));
 gulp.task('jshint', require('./gulp/tasks/jshint')(gulp, plugins, browserSync));
 
 // Compile and Automatically Prefix Stylesheets
-gulp.task('styles', getTask('styles'));
+gulp.task('styles',
+  require('./gulp/tasks/styles-sass')(gulp, plugins, config, 'styles'));
+
+// Compile and Automatically Prefix Stylesheets for elements
+gulp.task('styles:elements',
+  require('./gulp/tasks/styles-sass')(gulp, plugins, config, 'elements'));
 
 // Views with Jade
 gulp.task('views', getTask('views-jade'));
@@ -46,7 +48,7 @@ gulp.task('wiredep', getTask('wiredep'));
 gulp.task('serve', [
     'views',
     'styles',
-    'elements',
+    'styles:elements',
     'fonts'
   ],
   require('./gulp/tasks/serve')(gulp, config, browserSync));
@@ -82,7 +84,7 @@ gulp.task('default', ['clean'], function (cb) {
   require('run-sequence')(
     'views',
     ['copy', 'styles'],
-    ['jshint', 'images', 'fonts', 'html', 'elements'],
+    ['jshint', 'images', 'fonts', 'html', 'styles:elements'],
     'vulcanize',
     'revreplace',
 //    'gzip',

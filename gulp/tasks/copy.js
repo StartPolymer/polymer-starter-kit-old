@@ -2,7 +2,8 @@
 
 // Copy All Files At The Root Level (app)
 module.exports = function (gulp, plugins, config) { return function () {
-  var rootDir = '.tmp'; // '.tmp' for Jade, 'app' for disabled Jade
+  // Root dir '.tmp' is for any template engine, 'app' is for disabled it
+  var rootDir = '.tmp';
 
   return require('merge-stream')(
     gulp.src([

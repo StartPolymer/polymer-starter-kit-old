@@ -16,22 +16,22 @@ body(class=theme, unresolved): template#app(is='auto-binding')
       // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav
       nav: core-selector(selected='0')
         paper-item
-          a(href='#top', layout, horizontal, center)
+          a(href='#start-polymer', layout, horizontal, center)
             // Hack for fit <a> element
             // https://github.com/Polymer/paper-item/issues/14
             span(fit)
-            core-icon(icon='expand-less')
-            | Top
+            core-icon(icon='custom-icons:start-polymer')
+            | Start Polymer
         paper-item
-          a(href='#youtube-video', layout, horizontal, center)
+          a(href='#polycasts', layout, horizontal, center)
             span(fit)
             core-icon(icon='av:videocam')
-            | Youtube video
+            | Polycasts
         paper-item
-          a(href='#links', layout, horizontal, center)
+          a(href='#polymer-with-markdown', layout, horizontal, center)
             span(fit)
-            core-icon(icon='link')
-            | Links
+            core-icon(icon='custom-icons:markdown')
+            | Polymer with Markdown
       div.external-links(hidden?='{{!isPhoneSize}}', layout, horizontal, center-center)
         include psk-external-links
                 

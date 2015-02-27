@@ -5,6 +5,7 @@
 - [Polymer on Google Plus](https://plus.google.com/+PolymerProject/posts)
 - [Polymer on GitHub](https://github.com/polymer)
 - [PolymerLabs on GitHub](https://github.com/polymerlabs)
+- [Web Components](http://webcomponents.org)
 - [Who's using Polymer?](https://github.com/Polymer/polymer/wiki/Who's-using-Polymer%3F)
 
 ## Polymer Elements

@@ -111,6 +111,3 @@ Custom SVG icon <core-icon icon="custom-icons:markdown"></core-icon>
 
 - [CommonMark](http://commonmark.org)
 - [Markdown Cheat Sheet](https://gist.github.com/JosefJezek/39674d315b0f518cbb53)
-
-
-[Top<core-icon icon="expand-less"></core-icon>](#top)

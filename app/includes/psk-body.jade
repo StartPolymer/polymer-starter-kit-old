@@ -8,8 +8,7 @@ body(class=theme, unresolved): template#app(is='auto-binding')
     core-header-panel(drawer)
       // Drawer Toolbar
       core-toolbar
-        a(href='#top', hidden?='{{isPhoneSize}}', layout, horizontal, center)
-          span(fit)
+        span(hidden?='{{isPhoneSize}}', layout, horizontal, center)
           core-icon(icon='custom-icons:start-polymer')
           = title
         span(hidden?='{{!isPhoneSize}}') Menu
@@ -17,7 +16,7 @@ body(class=theme, unresolved): template#app(is='auto-binding')
       // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav
       nav: core-selector(selected='0')
         paper-item
-          a(href='#start-polymer', layout, horizontal, center)
+          a(href='#top', layout, horizontal, center)
             // Hack for fit <a> element
             // https://github.com/Polymer/paper-item/issues/14
             span(fit)

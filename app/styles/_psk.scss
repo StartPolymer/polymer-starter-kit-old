@@ -9,6 +9,7 @@ $body-font:             roboto-font($heading-font-name, 'body');
 
 .polymer-theme {
   @import 'psk-variables';
+  @import 'psk-markdown';
 
   color: $primary-text-color;
   font-family: $body-font;

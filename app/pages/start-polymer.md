@@ -1,7 +1,5 @@
 # Start Polymer
 
----
-
 - [Polymer Website](https://www.polymer-project.org)
 - [Polymer Community](https://plus.google.com/communities/115626364525706131031)
 - [Polymer on Google Plus](https://plus.google.com/+PolymerProject/posts)
@@ -89,7 +87,7 @@
 <!-- Only for demo, you can use "bower install highlightjs --save" -->
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
 
-```javascript
+```js
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```

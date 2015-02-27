@@ -8,7 +8,8 @@ body(class=theme, unresolved): template#app(is='auto-binding')
     core-header-panel(drawer)
       // Drawer Toolbar
       core-toolbar
-        span(hidden?='{{isPhoneSize}}')
+        a(href='#top', hidden?='{{isPhoneSize}}', layout, horizontal, center)
+          span(fit)
           core-icon(icon='custom-icons:start-polymer')
           = title
         span(hidden?='{{!isPhoneSize}}') Menu
@@ -37,20 +38,20 @@ body(class=theme, unresolved): template#app(is='auto-binding')
                 
     // Main
     core-header-panel(main)
+      a(id='top')
       header
         // Main Toolbar
         core-toolbar
           span(flex)
-            span(hidden?='{{!isPhoneSize}}')
+            span(hidden?='{{!isPhoneSize}}', layout, horizontal, center)
               core-icon(icon='custom-icons:start-polymer')
               = title
           paper-icon-button(icon='menu', core-drawer-toggle)
           span(hidden?='{{isPhoneSize}}')
             include psk-external-links
       // Main Content with Markdown
-      main
-        a(id='top')
-        include:md ../pages/psk.md
+      main.markdown-body
+        include:md ../pages/start-polymer.md
       footer
 
   // build:js /scripts/vendor.js

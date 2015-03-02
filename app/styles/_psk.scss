@@ -2,7 +2,7 @@
 @import 'bower_components/polymer-theme/sass/fonts';
 
 .polymer-theme {
-  @import 'bower_components/polymer-theme/sass/theme';
+  @import 'bower_components/polymer-theme/sass/base';
   @import 'psk-markdown';
 
   color: $primary-text-color;

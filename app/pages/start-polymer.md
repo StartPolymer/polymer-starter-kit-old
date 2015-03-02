@@ -56,12 +56,20 @@
 - [Building a Q&A System with Polymer and Firebase](https://divshot.com/blog/web-components/building-a-qa-system-with-polymer-and-firebase/)
 - [Building single page apps using web components](https://www.polymer-project.org/articles/spa.html)
 - [Building Sokoban with Polymer](http://www.sitepoint.com/building-sokoban-polymer/)
+- [Creating reusable elements](https://www.polymer-project.org/docs/start/reusableelements.html)
 
 ## Polymer Resources
 
 - [Polymer Snippets](https://github.com/PolymerLabs/polymer-patterns)
 - [Shadow DOM CSS Cheat Sheet](http://robdodson.me/shadow-dom-css-cheat-sheet/)
 - [Supercharge your HTML powers with web components](http://component.kitchen/tutorial)
+
+## Polymer Experts
+
+- [+Erik Isaksen](https://plus.google.com/+ErikIsaksen/posts)
+- [+Jana Moudrá](https://plus.google.com/+JanaMoudr%C3%A1/posts)
+- [+Jared Williams](https://plus.google.com/+JaredWilliams/posts)
+- [+Rob Dodson](https://plus.google.com/u/0/+RobDodson/posts)
 
 ## Polymer with Markdown
 

@@ -107,7 +107,7 @@ bower install && npm install
 gulp serve
 ```
 
-Build and serve the output from the dist build
+#### Build and serve the output from the dist build
 
 ```sh
 gulp serve:dist
@@ -118,6 +118,10 @@ gulp serve:dist
 ```sh
 gulp
 ```
+
+### Explain `psk-` prefix
+
+`psk-` prefix in file names is for git merging with `psk` branch without conflicts
 
 ## Deploy :tada:
 

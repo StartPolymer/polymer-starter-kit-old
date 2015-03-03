@@ -1,0 +1,35 @@
+.polymer-theme-red {
+  $primary-color-name:    'red';
+  $accent-color-name:     'red';
+  @import 'bower_components/polymer-theme/sass/base';
+  @import 'psk-base';
+}
+
+.polymer-theme-pink {
+  $primary-color-name:    'pink';
+  $accent-color-name:     'indigo';
+  @import 'bower_components/polymer-theme/sass/base';
+  @import 'psk-base';
+}
+
+.polymer-theme-purple {
+  $primary-color-name:    'purple';
+  $accent-color-name:     'yellow';
+  @import 'bower_components/polymer-theme/sass/base';
+  @import 'psk-base';
+
+  [drawer] {
+    paper-item {
+      &.core-selected {
+        color: $dark-primary-color;
+      }
+    }
+  }
+}
+
+.polymer-theme-indigo {
+  $primary-color-name:    'indigo';
+  $accent-color-name:     'pink';
+  @import 'bower_components/polymer-theme/sass/base';
+  @import 'psk-base';
+}

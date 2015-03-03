@@ -1,57 +1,8 @@
 @import 'psk-variables';
 @import 'bower_components/polymer-theme/sass/fonts';
+@import 'psk-themes';
+@import 'psk-markdown';
 
-.polymer-theme {
-  @import 'bower_components/polymer-theme/sass/base';
-  @import 'psk-markdown';
-
-  color: $primary-text-color;
+body {
   font-family: $body-font;
-
-  [drawer] {
-    background-color: $background-color;
-
-    paper-item {
-      transition: all 500ms ease-in-out;
-
-      &.core-selected {
-        color: $text-primary-color;
-      }
-    }
-
-    div.external-links {
-      margin-top: 30px;
-
-      paper-icon-button::shadow #icon {
-        color: $primary-color;
-        height: 25px;
-        width: 25px;
-      }
-    }
-  }
-
-  main {
-    padding: 0 20px;
-
-    a {
-      color: $dark-primary-color;
-    }
-
-    // CSS Fluid Image
-    // http://demosthenes.info/blog/586/CSS-Fluid-Image-Techniques-for-Responsive-Site-Design
-    img {
-      height: auto;
-      max-width: 100%;
-    }
-
-    core-icon[icon="custom-icons:markdown"] {
-      color: $primary-color;
-      height: 50px;
-      width: 50px;
-    }
-  }
-
-  footer {
-    height: 50px;
-  }
 }

@@ -1,34 +1,145 @@
-.polymer-theme-red {
+.polymer-theme-red-blue {
   $primary-color-name:    'red';
-  $accent-color-name:     'red';
+  $accent-color-name:     'blue';
   @import 'bower_components/polymer-theme/sass/base';
   @import 'psk-base';
 }
 
-.polymer-theme-pink {
+.polymer-theme-pink-light-blue {
   $primary-color-name:    'pink';
+  $accent-color-name:     'light-blue';
+  @import 'bower_components/polymer-theme/sass/base';
+  @import 'psk-base';
+}
+
+.polymer-theme-purple-yellow {
+  $primary-color-name:    'purple';
+  $accent-color-name:     'yellow';
+  @import 'bower_components/polymer-theme/sass/variables';
+  $text-accent-color:     $dark-primary-color;
+  @import 'bower_components/polymer-theme/sass/base';
+  @import 'psk-base';
+}
+
+.polymer-theme-deep-purple-light-blue {
+  $primary-color-name:    'deep-purple';
+  $accent-color-name:     'light-blue';
+  @import 'bower_components/polymer-theme/sass/base';
+  @import 'psk-base';
+}
+
+.polymer-theme-indigo-pink {
+  $primary-color-name:    'indigo';
+  $accent-color-name:     'pink';
+  @import 'bower_components/polymer-theme/sass/base';
+  @import 'psk-base';
+}
+
+.polymer-theme-blue-pink {
+  $primary-color-name:    'blue';
+  $accent-color-name:     'pink';
+  @import 'bower_components/polymer-theme/sass/base';
+  @import 'psk-base';
+}
+
+.polymer-theme-light-blue-lime {
+  $primary-color-name:    'light-blue';
+  $accent-color-name:     'lime';
+  @import 'bower_components/polymer-theme/sass/variables';
+  $text-accent-color:     $dark-primary-color;
+  @import 'bower_components/polymer-theme/sass/base';
+  @import 'psk-base';
+}
+
+.polymer-theme-cyan-orange {
+  $primary-color-name:    'cyan';
+  $accent-color-name:     'orange';
+  @import 'bower_components/polymer-theme/sass/base';
+  @import 'psk-base';
+}
+
+.polymer-theme-teal-amber {
+  $primary-color-name:    'teal';
+  $accent-color-name:     'amber';
+  @import 'bower_components/polymer-theme/sass/variables';
+  $text-accent-color:     $dark-primary-color;
+  @import 'bower_components/polymer-theme/sass/base';
+  @import 'psk-base';
+}
+
+.polymer-theme-green-yellow {
+  $primary-color-name:    'green';
+  $accent-color-name:     'yellow';
+  @import 'bower_components/polymer-theme/sass/variables';
+  $text-accent-color:     $dark-primary-color;
+  @import 'bower_components/polymer-theme/sass/base';
+  @import 'psk-base';
+}
+
+.polymer-theme-light-green-deep-orange {
+  $primary-color-name:    'light-green';
+  $accent-color-name:     'deep-orange';
+  @import 'bower_components/polymer-theme/sass/base';
+  @import 'psk-base';
+}
+
+.polymer-theme-lime-light-blue {
+  $primary-color-name:    'lime';
+  $accent-color-name:     'light-blue';
+  @import 'bower_components/polymer-theme/sass/base';
+  @import 'psk-base';
+}
+
+.polymer-theme-yellow-orange {
+  $primary-color-name:    'yellow';
+  $accent-color-name:     'orange';
+  @import 'bower_components/polymer-theme/sass/variables';
+  $dark-primary-color:    $secondary-text-color;
+  $text-primary-color:    $primary-text-color;
+  $text-accent-color:     $primary-text-color;
+  @import 'bower_components/polymer-theme/sass/base';
+  @import 'psk-base';
+}
+
+.polymer-theme-amber-indigo {
+  $primary-color-name:    'amber';
   $accent-color-name:     'indigo';
   @import 'bower_components/polymer-theme/sass/base';
   @import 'psk-base';
 }
 
-.polymer-theme-purple {
-  $primary-color-name:    'purple';
-  $accent-color-name:     'yellow';
+.polymer-theme-orange-light-blue {
+  $primary-color-name:    'orange';
+  $accent-color-name:     'light-blue';
   @import 'bower_components/polymer-theme/sass/base';
   @import 'psk-base';
-
-  [drawer] {
-    paper-item {
-      &.core-selected {
-        color: $dark-primary-color;
-      }
-    }
-  }
 }
 
-.polymer-theme-indigo {
-  $primary-color-name:    'indigo';
+.polymer-theme-deep-orange-blue {
+  $primary-color-name:    'deep-orange';
+  $accent-color-name:     'blue';
+  @import 'bower_components/polymer-theme/sass/base';
+  @import 'psk-base';
+}
+
+.polymer-theme-brown-amber {
+  $primary-color-name:    'brown';
+  $accent-color-name:     'amber';
+  @import 'bower_components/polymer-theme/sass/variables';
+  $text-accent-color:     $dark-primary-color;
+  @import 'bower_components/polymer-theme/sass/base';
+  @import 'psk-base';
+}
+
+.polymer-theme-grey-blue {
+  $primary-color-name:    'grey';
+  $accent-color-name:     'blue';
+  @import 'bower_components/polymer-theme/sass/base';
+  @import 'psk-base';
+}
+
+.polymer-theme-blue-grey-pink {
+  $primary-color-name:    'blue-grey';
   $accent-color-name:     'pink';
   @import 'bower_components/polymer-theme/sass/base';
   @import 'psk-base';

@@ -5,7 +5,7 @@ body(class=theme, unresolved): template#app(is='auto-binding')
   
   core-drawer-panel
     // Drawer
-    core-header-panel(drawer)
+    core-header-panel.sidebar(drawer)
       // Drawer Toolbar
       core-toolbar
         span(hidden?='{{isPhoneSize}}', layout, horizontal, center)
@@ -32,6 +32,13 @@ body(class=theme, unresolved): template#app(is='auto-binding')
             span(fit)
             core-icon(icon='custom-icons:markdown')
             | Polymer with Markdown
+      div(layout, horizontal, center-center)
+        paper-dropdown-menu(label='Select Theme')
+          paper-dropdown.dropdown
+            core-menu.menu(valueattr='data-theme', on-core-select='{{themeSelected}}')
+              template(repeat='{{theme, i in themes}}')
+                paper-item(data-theme='{{theme.id}}') {{theme.name}}
+        
       div.external-links(hidden?='{{!isPhoneSize}}', layout, horizontal, center-center)
         include psk-external-links
                 
@@ -41,11 +48,11 @@ body(class=theme, unresolved): template#app(is='auto-binding')
       header
         // Main Toolbar
         core-toolbar
+          paper-icon-button(icon='menu', core-drawer-toggle)
           span(flex)
             span(hidden?='{{!isPhoneSize}}', layout, horizontal, center)
               core-icon(icon='custom-icons:start-polymer')
               = title
-          paper-icon-button(icon='menu', core-drawer-toggle)
           span(hidden?='{{isPhoneSize}}')
             include psk-external-links
       // Main Content with Markdown

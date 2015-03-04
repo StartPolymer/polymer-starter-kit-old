@@ -10,7 +10,8 @@ module.exports = function (gulp, plugins, config) { return function () {
     }))
     .pipe(gulp.dest('app/styles'));
 
-  gulp.src('app/layouts/*.jade')
+  //gulp.src('app/layouts/*.jade')
+  gulp.src('app/*.html')
     .pipe(wiredep({
       ignorePath: /^(\.\.\/)*\.\./,
       exclude: [

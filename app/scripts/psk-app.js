@@ -5,7 +5,6 @@
   // and give it some initial binding values
   // Learn more about auto-binding templates at http://goo.gl/Dx1u2g
   var app = document.querySelector('#app');
-  app.property = 'Using property from Polymer in Markdown.';
   app.themes = [
     {name: 'Red + Blue', id: 'red-blue'},
     {name: 'Pink + Light Blue', id: 'pink-light-blue'},

@@ -46,7 +46,7 @@ gulp.task('wiredep', getTask('wiredep'));
 
 // Watch Files For Changes & Reload
 gulp.task('serve', [
-    'views',
+//    'views',
     'styles',
     'styles:elements',
     'fonts'
@@ -82,7 +82,7 @@ gulp.task('vulcanize', getTask('vulcanize'));
 // Build Production Files, the Default Task
 gulp.task('default', ['clean'], function (cb) {
   require('run-sequence')(
-    'views',
+//    'views',
     ['copy', 'styles'],
     ['jshint', 'images', 'fonts', 'html', 'styles:elements'],
     'vulcanize',

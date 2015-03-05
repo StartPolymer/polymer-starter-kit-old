@@ -28,7 +28,7 @@ module.exports = function (gulp, config, browserSync) { return function () {
 
   //gulp.watch('app/**/*.{jade,md}', ['views', reload]);
   gulp.watch('app/styles/**/*.scss', ['styles', reload]);
-  gulp.watch('app/elements/**/*.scss', ['elements', reload]);
+  gulp.watch('app/elements/**/*.scss', ['styles:elements', reload]);
   gulp.watch('app/{scripts,elements}/**/*.js', ['jshint', reload]);
   gulp.watch('app/fonts/**/*', ['fonts']);
   gulp.watch('bower.json', ['wiredep', 'fonts']);

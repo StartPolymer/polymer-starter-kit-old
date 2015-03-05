@@ -45,13 +45,21 @@ gulp.task('wiredep', getTask('wiredep'));
 // -----------
 
 // Watch Files For Changes & Reload
+gulp.task('serve:base',
+  require('./gulp/tasks/serve')(gulp, config, browserSync));
+
 gulp.task('serve', [
 //    'views',
-    'styles',
-    'styles:elements',
     'fonts'
-  ],
-  require('./gulp/tasks/serve')(gulp, config, browserSync));
+  ], function (cb) {
+    require('run-sequence')(
+      'styles',
+      'styles:elements',
+      'serve:base',
+      cb
+    );
+  }
+);
 
 // Build and serve the output from the dist build
 gulp.task('serve:dist', ['default'],

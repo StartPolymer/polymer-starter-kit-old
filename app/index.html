@@ -176,19 +176,61 @@
             </h2>
             <div layout horizontal center>
               <span flex>Big action button</span>
-              <paper-fab icon="add"></paper-fab>
+              <paper-fab icon="star"></paper-fab>
             </div>
             <div layout horizontal center>
               <span flex>Small action button</span>
               <paper-fab mini icon="favorite"></paper-fab>
             </div>
           </section>
+
+          <section class="icon-buttons" layout vertical center-center>
+            <h2 id="icon-buttons">
+              <a href="http://www.polymer-project.org/docs/elements/paper-elements.html#paper-icon-button" target="_blank">
+                Icon Buttons
+              </a>
+            </h2>
+            <div layout horizontal center>
+              <span flex>Default</span>
+              <paper-icon-button icon="menu"></paper-icon-button>
+              <paper-icon-button icon="check"></paper-icon-button>
+              <paper-icon-button icon="refresh"></paper-icon-button>
+            </div>
+            <div layout horizontal center>
+              <span flex>Toggle</span>
+              <paper-icon-button toggle icon="menu"></paper-icon-button>
+              <paper-icon-button toggle icon="check"></paper-icon-button>
+              <paper-icon-button toggle icon="refresh"></paper-icon-button>
+            </div>
+            <div layout horizontal center>
+              <span flex>Ripple fill</span>
+              <paper-icon-button fill icon="menu"></paper-icon-button>
+              <paper-icon-button fill icon="check"></paper-icon-button>
+              <paper-icon-button fill icon="refresh"></paper-icon-button>
+            </div>
+            <div layout horizontal center>
+              <span flex>Ripple fill toggle</span>
+              <paper-icon-button fill toggle icon="menu"></paper-icon-button>
+              <paper-icon-button fill toggle icon="check"></paper-icon-button>
+              <paper-icon-button fill toggle icon="refresh"></paper-icon-button>
+            </div>
+            <div layout horizontal center>
+              <span flex>Disabled</span>
+              <paper-icon-button disabled icon="menu"></paper-icon-button>
+              <paper-icon-button disabled icon="check"></paper-icon-button>
+              <paper-icon-button disabled icon="refresh"></paper-icon-button>
+            </div>
+          </section>
+
         </main>
 
         <footer>
         </footer>
       </core-header-panel>
     </core-drawer-panel>
+    <a href="#">
+      <paper-fab class="add" icon="add"></paper-fab>
+    </a>
   </template>
 
   <!-- build:js /scripts/vendor.js-->

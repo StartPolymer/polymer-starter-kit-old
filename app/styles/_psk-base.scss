@@ -45,8 +45,18 @@ main {
       margin-right: 7px;
     }
   }
+
+  .icon-buttons>div {
+    width: 250px;
+  }
 }
 
 footer {
   height: 50px;
+}
+
+a>paper-fab {
+  bottom: 16px;
+  position: fixed;
+  right: 16px;
 }

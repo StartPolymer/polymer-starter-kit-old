@@ -2,7 +2,7 @@
 
 Polymer Starter Kit is a boilerplate for web development using Web Components and modern tools.
 
-Inspired by
+Keeping up to date with
 [Web Starter Kit](https://github.com/google/web-starter-kit),
 [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate),
 [Polymer generator](https://github.com/yeoman/generator-polymer) and

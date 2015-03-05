@@ -15,7 +15,8 @@ Following [The 10 Commandments of Modern Web Application](https://gist.github.co
 ## Features
 
 - Using [Polymer Theme](https://github.com/StartPolymer/polymer-theme)
-- [Custom Icons](https://github.com/StartPolymer/polymer-starter-kit/blob/master/app/elements/custom-icons/psk-custom-icons.jade) element
+- [Custom Icons](https://github.com/StartPolymer/polymer-starter-kit/blob/master/app/elements/custom-icons/psk-custom-icons.html) and
+[External Links](https://github.com/StartPolymer/polymer-starter-kit/blob/master/app/elements/external-links/psk-external-links.html) elements
 - [Sass](http://sass-lang.com) CSS Preprocessor with [Ruby](https://www.ruby-lang.org)
  - PSK need CSS Preprocessor for [Variables](http://sass-guidelin.es/#variables),
  [Loops](http://sass-guidelin.es/#loops),
@@ -85,7 +86,6 @@ bower install && npm install
 ### Check out the variables
 
 - Gulp variables are in the file [gulp/psk-config.js](https://github.com/StartPolymer/polymer-starter-kit/blob/master/gulp/psk-config.js)
-- Jade variables are in the file [app/includes/psk-variables.jade](https://github.com/StartPolymer/polymer-starter-kit/blob/master/app/includes/psk-variables.jade)
 - Sass variables are in the file [app/styles/_psk-variables.scss](https://github.com/StartPolymer/polymer-starter-kit/blob/master/app/styles/_psk-variables.scss)
 
 ### Serve to local and external URL

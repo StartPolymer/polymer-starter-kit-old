@@ -2,9 +2,9 @@
   "name": "polymer-starter-kit",
   "private": true,
   "dependencies": {
-    "core-elements": "Polymer/core-elements#^0.5.4",
-    "paper-elements": "Polymer/paper-elements#^0.5.4",
-    "polymer": "Polymer/polymer#^0.5.4",
-    "polymer-theme": "StartPolymer/polymer-theme#^1.0.1"
+    "polymer": "Polymer/polymer#^0.5",
+    "core-elements": "Polymer/core-elements#^0.5",
+    "paper-elements": "Polymer/paper-elements#^0.5",
+    "polymer-theme": "StartPolymer/polymer-theme#master"
   }
 }

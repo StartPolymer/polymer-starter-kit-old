@@ -5,11 +5,11 @@
 .sidebar {
   background-color: $background-color;
 
-  .external-links {
+  external-links {
     margin-top: 30px;
 
-    paper-icon-button::shadow #icon {
-      color: $dark-primary-color;
+    &::shadow paper-icon-button::shadow #icon {
+      color: $link-color;
       height: 25px;
       width: 25px;
     }
@@ -20,7 +20,7 @@ main {
   padding: 0 20px;
 
   a {
-    color: $dark-primary-color;
+    color: $link-color;
   }
 
   // CSS Fluid Image
@@ -31,7 +31,7 @@ main {
   }
 
   core-icon[icon="custom-icons:markdown"] {
-    color: $dark-primary-color;
+    color: $tertiary-text-color;
     height: 50px;
     width: 50px;
   }

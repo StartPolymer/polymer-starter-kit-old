@@ -1,9 +1,10 @@
 & {
+  background: $primary-background-color;
   color: $primary-text-color;
 }
 
 .sidebar {
-  background-color: $background-color;
+  background: $secondary-background-color;
 
   external-links {
     margin-top: 30px;
@@ -17,23 +18,32 @@
 }
 
 main {
-  padding: 0 20px;
+  section {
+    padding: 80px 10px;
 
-  a {
-    color: $link-color;
+    h2 a:hover {
+      text-decoration: underline;
+    }
+
+    &>div {
+      padding: 10px 0;
+    }
+
+    &:nth-child(2n) {
+      background: $background-primary-color;
+    }
   }
 
-  // CSS Fluid Image
-  // http://demosthenes.info/blog/586/CSS-Fluid-Image-Techniques-for-Responsive-Site-Design
-  img {
-    height: auto;
-    max-width: 100%;
+  .buttons paper-button {
+    margin-bottom: 5px;
   }
 
-  core-icon[icon="custom-icons:markdown"] {
-    color: $tertiary-text-color;
-    height: 50px;
-    width: 50px;
+  .action-buttons>div {
+    width: 220px;
+
+    paper-fab[mini] {
+      margin-right: 7px;
+    }
   }
 }
 

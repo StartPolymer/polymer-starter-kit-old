@@ -80,22 +80,22 @@
               <!-- Hack for fit <a> element-->
               <!-- https://github.com/Polymer/paper-item/issues/14-->
               <span fit></span>
-              <core-icon icon="custom-icons:start-polymer"></core-icon>
-              Start Polymer
+              <core-icon icon="chevron-right"></core-icon>
+              Buttons
             </a>
           </paper-item>
           <paper-item>
-            <a href="#polycasts" layout horizontal center>
+            <a href="#action-buttons" layout horizontal center>
               <span fit></span>
-              <core-icon icon="av:videocam"></core-icon>
-              Polycasts
+              <core-icon icon="chevron-right"></core-icon>
+              Action Buttons
             </a>
           </paper-item>
           <paper-item>
-            <a href="#polymer-with-markdown" layout horizontal center>
+            <a href="#icon-buttons" layout horizontal center>
               <span fit></span>
-              <core-icon icon="custom-icons:markdown"></core-icon>
-              Polymer with Markdown
+              <core-icon icon="chevron-right"></core-icon>
+              Icon Buttons
             </a>
           </paper-item>
         </core-selector></nav>
@@ -127,10 +127,64 @@
             <external-links hidden?="{{isPhoneSize}}"></external-links>
           </core-toolbar>
         </header>
+
         <!-- Main Content-->
         <main>
+          <section class="buttons" layout vertical center-center>
+            <h2 id="buttons">
+              <a href="http://www.polymer-project.org/docs/elements/paper-elements.html#paper-button" target="_blank">
+                Buttons
+              </a>
+            </h2>
+            <div class="example">
+              <paper-button>Default</paper-button>
+              <paper-button primary>Primary</paper-button>
+              <paper-button secondary>Secondary</paper-button>
+              <paper-button success>Success</paper-button>
+              <paper-button info>Info</paper-button>
+              <paper-button warning>Warning</paper-button>
+              <paper-button error>Error</paper-button>
+              <paper-button link>Link</paper-button>
+            </div>
+            <div class="example">
+              <paper-button raised>Default</paper-button>
+              <paper-button raised primary>Primary</paper-button>
+              <paper-button raised secondary>Secondary</paper-button>
+              <paper-button raised success>Success</paper-button>
+              <paper-button raised info>Info</paper-button>
+              <paper-button raised warning>Warning</paper-button>
+              <paper-button raised error>Error</paper-button>
+              <paper-button link>Link</paper-button>
+            </div>
+            <div class="example">
+              <paper-button disabled>Default</paper-button>
+              <paper-button disabled primary>Primary</paper-button>
+              <paper-button disabled secondary>Secondary</paper-button>
+              <paper-button disabled success>Success</paper-button>
+              <paper-button disabled info>Info</paper-button>
+              <paper-button disabled warning>Warning</paper-button>
+              <paper-button disabled error>Error</paper-button>
+              <paper-button disabled link>Link</paper-button>
+            </div>
+          </section>
 
+          <section class="action-buttons" layout vertical center-center>
+            <h2 id="action-buttons">
+              <a href="http://www.polymer-project.org/docs/elements/paper-elements.html#paper-fab" target="_blank">
+                Action Buttons
+              </a>
+            </h2>
+            <div layout horizontal center>
+              <span flex>Big action button</span>
+              <paper-fab icon="add"></paper-fab>
+            </div>
+            <div layout horizontal center>
+              <span flex>Small action button</span>
+              <paper-fab mini icon="favorite"></paper-fab>
+            </div>
+          </section>
         </main>
+
         <footer>
         </footer>
       </core-header-panel>

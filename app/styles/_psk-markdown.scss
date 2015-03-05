@@ -59,7 +59,7 @@
     padding-bottom: .2em;
     margin: 0;
     font-size: 85%;
-    background-color: rgba(0, 0, 0, .04);
+    background: rgba(0, 0, 0, .04);
     border-radius: 3px;
   }
 
@@ -72,7 +72,7 @@
     overflow: auto;
     font-size: 85%;
     line-height: 1.45;
-    background-color: #f7f7f7;
+    background: #f7f7f7;
     border-radius: 3px;
   }
 
@@ -88,12 +88,12 @@
     margin-bottom: 16px;
 
     tr {
-      background-color: #fff;
+      background: #fff;
       border-top: 1px solid #ccc;
     }
 
     tr:nth-child(2n) {
-      background-color: #f8f8f8;
+      background: #f8f8f8;
     }
 
     th {

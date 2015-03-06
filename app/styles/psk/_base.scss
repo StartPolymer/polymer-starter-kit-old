@@ -3,6 +3,12 @@
   color: $primary-text-color;
 }
 
+h1,
+h2,
+h3 {
+  font-family: $heading-font;
+}
+
 .sidebar {
   background: $secondary-background-color;
 

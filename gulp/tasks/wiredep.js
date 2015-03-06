@@ -19,5 +19,6 @@ module.exports = function (gulp, plugins, config) { return function () {
         'bower_components/webcomponentsjs/webcomponents.js'
       ]
     }))
-    .pipe(gulp.dest('app/layouts'));
+    //.pipe(gulp.dest('app/layouts'));
+    .pipe(gulp.dest('app'));
 };};

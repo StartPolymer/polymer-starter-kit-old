@@ -55,7 +55,7 @@ footer {
   height: 50px;
 }
 
-a>paper-fab {
+paper-fab[icon="add"] {
   bottom: 16px;
   position: fixed;
   right: 16px;

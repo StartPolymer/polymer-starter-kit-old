@@ -54,17 +54,15 @@
   <!-- endreplace-->
 </head>
 <body unresolved class="polymer-theme-indigo-pink">
+
   <template id="app" is="auto-binding">
+    <demo-element route="{{route}}"></demo-element>
   </template>
 
-  <demo-element></demo-element>
-
-  <!-- build:js /scripts/vendor.js-->
-  <!-- bower:js-->
-  <!-- endbower-->
-  <!-- endbuild-->
-
   <!-- build:js /scripts/app.js-->
+  <!-- bower:js-->
+  <script src="/bower_components/page/page.js"></script>
+  <!-- endbower-->
   <script src="/scripts/psk-app.js"></script>
   <!-- endbuild-->
 </body>

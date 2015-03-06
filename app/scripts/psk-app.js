@@ -12,6 +12,26 @@
     console.log('Our app is ready to rock!');
   });
 
+  function home() {
+    app.route = 'home';
+  }
+
+  function actionButtons() {
+    app.route = 'action-buttons';
+  }
+
+  function iconButtons() {
+    app.route = 'icon-buttons';
+  }
+
+  // Define routes
+  page('/', home);
+  page('/action-buttons', actionButtons);
+  page('/icon-buttons', iconButtons);
+
+  // Configure
+  page({ hashbang: true });
+
 // wrap document so it plays nice with other libraries
 // http://www.polymer-project.org/platform/shadow-dom.html#wrappers
 })(wrap(document));

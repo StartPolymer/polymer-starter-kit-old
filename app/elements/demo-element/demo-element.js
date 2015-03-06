@@ -22,6 +22,7 @@ new Polymer({
     {name: 'Grey + Blue', id: 'grey-blue'},
     {name: 'Blue Grey + Pink', id: 'blue-grey-pink'}
   ],
+  route: 'home',
   // Dropdown menu for select theme
   themeSelected: function(e, detail) {
     if (detail.isSelected) {

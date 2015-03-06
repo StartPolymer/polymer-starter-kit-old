@@ -24,19 +24,19 @@ h3 {
 }
 
 main {
-  section {
-    padding: 80px 10px;
+  core-animated-pages {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+  }
 
+  section {
     h2 a:hover {
       text-decoration: underline;
     }
 
     &>div {
       padding: 10px 0;
-    }
-
-    &:nth-child(2n) {
-      background: $background-primary-color;
     }
   }
 

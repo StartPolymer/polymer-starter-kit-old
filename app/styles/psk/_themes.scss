@@ -1,13 +1,15 @@
 .polymer-theme-red-blue {
   $primary-color-name:    'red';
   $secondary-color-name:  'blue';
-  @import 'psk-theme-base';
+  // Other variables are in this files
+  // bower_components/polymer-theme/sass/variables
+  @import 'theme-base';
 }
 
 .polymer-theme-pink-light-blue {
   $primary-color-name:    'pink';
   $secondary-color-name:  'light-blue';
-  @import 'psk-theme-base';
+  @import 'theme-base';
 }
 
 .polymer-theme-purple-yellow {
@@ -15,25 +17,25 @@
   $secondary-color-name:  'yellow';
   @import 'bower_components/polymer-theme/sass/variables';
   $text-accent-color:     $dark-primary-color;
-  @import 'psk-theme-base';
+  @import 'theme-base';
 }
 
 .polymer-theme-deep-purple-light-blue {
   $primary-color-name:    'deep-purple';
   $secondary-color-name:  'light-blue';
-  @import 'psk-theme-base';
+  @import 'theme-base';
 }
 
 .polymer-theme-indigo-pink {
   $primary-color-name:    'indigo';
   $secondary-color-name:  'pink';
-  @import 'psk-theme-base';
+  @import 'theme-base';
 }
 
 .polymer-theme-blue-pink {
   $primary-color-name:    'blue';
   $secondary-color-name:  'pink';
-  @import 'psk-theme-base';
+  @import 'theme-base';
 }
 
 .polymer-theme-light-blue-lime {
@@ -41,13 +43,13 @@
   $secondary-color-name:  'lime';
   @import 'bower_components/polymer-theme/sass/variables';
   $text-accent-color:     $dark-primary-color;
-  @import 'psk-theme-base';
+  @import 'theme-base';
 }
 
 .polymer-theme-cyan-orange {
   $primary-color-name:    'cyan';
   $secondary-color-name:  'orange';
-  @import 'psk-theme-base';
+  @import 'theme-base';
 }
 
 .polymer-theme-teal-amber {
@@ -55,7 +57,7 @@
   $secondary-color-name:  'amber';
   @import 'bower_components/polymer-theme/sass/variables';
   $text-accent-color:     $dark-primary-color;
-  @import 'psk-theme-base';
+  @import 'theme-base';
 }
 
 .polymer-theme-green-yellow {
@@ -63,19 +65,19 @@
   $secondary-color-name:  'yellow';
   @import 'bower_components/polymer-theme/sass/variables';
   $text-accent-color:     $dark-primary-color;
-  @import 'psk-theme-base';
+  @import 'theme-base';
 }
 
 .polymer-theme-light-green-deep-orange {
   $primary-color-name:    'light-green';
   $secondary-color-name:  'deep-orange';
-  @import 'psk-theme-base';
+  @import 'theme-base';
 }
 
 .polymer-theme-lime-light-blue {
   $primary-color-name:    'lime';
   $secondary-color-name:  'light-blue';
-  @import 'psk-theme-base';
+  @import 'theme-base';
 }
 
 .polymer-theme-yellow-orange {
@@ -87,25 +89,25 @@
   $text-primary-color:    $primary-text-color;
   $text-accent-color:     $primary-text-color;
   $light-primary-color:   $disabled-text-color;
-  @import 'psk-theme-base';
+  @import 'theme-base';
 }
 
 .polymer-theme-amber-indigo {
   $primary-color-name:    'amber';
   $secondary-color-name:  'indigo';
-  @import 'psk-theme-base';
+  @import 'theme-base';
 }
 
 .polymer-theme-orange-light-blue {
   $primary-color-name:    'orange';
   $secondary-color-name:  'light-blue';
-  @import 'psk-theme-base';
+  @import 'theme-base';
 }
 
 .polymer-theme-deep-orange-blue {
   $primary-color-name:    'deep-orange';
   $secondary-color-name:  'blue';
-  @import 'psk-theme-base';
+  @import 'theme-base';
 }
 
 .polymer-theme-brown-amber {
@@ -113,17 +115,17 @@
   $secondary-color-name:  'amber';
   @import 'bower_components/polymer-theme/sass/variables';
   $text-accent-color:     $dark-primary-color;
-  @import 'psk-theme-base';
+  @import 'theme-base';
 }
 
 .polymer-theme-grey-blue {
   $primary-color-name:    'grey';
   $secondary-color-name:  'blue';
-  @import 'psk-theme-base';
+  @import 'theme-base';
 }
 
 .polymer-theme-blue-grey-pink {
   $primary-color-name:    'blue-grey';
   $secondary-color-name:  'pink';
-  @import 'psk-theme-base';
+  @import 'theme-base';
 }

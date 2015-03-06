@@ -1,0 +1,206 @@
+<link rel="import" href="../../bower_components/core-drawer-panel/core-drawer-panel.html"/>
+<link rel="import" href="../../bower_components/core-header-panel/core-header-panel.html"/>
+<link rel="import" href="../../bower_components/core-icon/core-icon.html"/>
+<link rel="import" href="../../bower_components/core-icons/core-icons.html"/>
+<link rel="import" href="../../bower_components/core-media-query/core-media-query.html"/>
+<link rel="import" href="../../bower_components/core-menu/core-menu.html"/>
+<link rel="import" href="../../bower_components/core-selector/core-selector.html"/>
+<link rel="import" href="../../bower_components/core-toolbar/core-toolbar.html"/>
+
+<link rel="import" href="../../bower_components/paper-button/paper-button.html"/>
+<link rel="import" href="../../bower_components/paper-dropdown/paper-dropdown.html"/>
+<link rel="import" href="../../bower_components/paper-dropdown-menu/paper-dropdown-menu.html"/>
+<link rel="import" href="../../bower_components/paper-fab/paper-fab.html"/>
+<link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html"/>
+<link rel="import" href="../../bower_components/paper-item/paper-item.html"/>
+
+<link rel="import" href="../custom-icons/psk-custom-icons.html"/>
+<link rel="import" href="../external-links/psk-external-links.html"/>
+
+<polymer-element name="demo-element">
+<template>
+
+  <link rel="stylesheet" href="demo-element.css">
+
+  <!-- Use CSS media queries for responsiveness-->
+  <!-- https://developers.google.com/web/fundamentals/layouts/rwd-fundamentals/use-media-queries-->
+  <core-media-query query="max-width: 640px" querymatches="{{isPhoneSize}}"></core-media-query>
+
+  <core-drawer-panel>
+    <!-- Drawer-->
+    <core-header-panel drawer class="sidebar">
+      <!-- Drawer Toolbar-->
+      <core-toolbar>
+        <span layout horizontal center hidden?="{{isPhoneSize}}">
+          <core-icon icon="custom-icons:start-polymer"></core-icon>
+          Polymer Starter Kit
+        </span>
+        <span hidden?="{{!isPhoneSize}}">
+          Menu
+        </span>
+      </core-toolbar>
+      <!-- Navigation links-->
+      <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav-->
+      <nav><core-selector selected="0">
+        <paper-item>
+          <a href="#top" layout horizontal center>
+            <!-- Hack for fit <a> element-->
+            <!-- https://github.com/Polymer/paper-item/issues/14-->
+            <span fit></span>
+            <core-icon icon="chevron-right"></core-icon>
+            Buttons
+          </a>
+        </paper-item>
+        <paper-item>
+          <a href="#action-buttons" layout horizontal center>
+            <span fit></span>
+            <core-icon icon="chevron-right"></core-icon>
+            Action Buttons
+          </a>
+        </paper-item>
+        <paper-item>
+          <a href="#icon-buttons" layout horizontal center>
+            <span fit></span>
+            <core-icon icon="chevron-right"></core-icon>
+            Icon Buttons
+          </a>
+        </paper-item>
+      </core-selector></nav>
+      <div layout horizontal center-center>
+        <paper-dropdown-menu label="Select Theme">
+          <paper-dropdown class="dropdown">
+            <core-menu valueattr="data-theme" on-core-select="{{themeSelected}}" class="menu">
+              <template repeat="{{theme, i in themes}}">
+                <paper-item data-theme="{{theme.id}}">{{theme.name}}</paper-item>
+              </template>
+            </core-menu>
+          </paper-dropdown>
+        </paper-dropdown-menu>
+      </div>
+      <external-links layout horizontal center-center hidden?="{{!isPhoneSize}}"></external-links>
+    </core-header-panel>
+    <!-- Main-->
+    <core-header-panel main>
+      <a id="top"></a>
+      <header>
+        <!-- Main Toolbar-->
+        <core-toolbar>
+          <paper-icon-button icon="menu" core-drawer-toggle></paper-icon-button>
+          <span layout horizontal center flex hidden?="{{!isPhoneSize}}">
+            <core-icon icon="custom-icons:start-polymer"></core-icon>
+            Polymer Starter Kit
+          </span>
+          <span flex hidden?="{{isPhoneSize}}"></span>
+          <external-links hidden?="{{isPhoneSize}}"></external-links>
+        </core-toolbar>
+      </header>
+
+      <!-- Main Content-->
+      <main>
+        <section class="buttons" layout vertical center-center>
+          <h2 id="buttons">
+            <a href="http://www.polymer-project.org/docs/elements/paper-elements.html#paper-button" target="_blank">
+              Buttons
+            </a>
+          </h2>
+          <div class="example">
+            <paper-button>Default</paper-button>
+            <paper-button primary>Primary</paper-button>
+            <paper-button secondary>Secondary</paper-button>
+            <paper-button success>Success</paper-button>
+            <paper-button info>Info</paper-button>
+            <paper-button warning>Warning</paper-button>
+            <paper-button error>Error</paper-button>
+            <paper-button link>Link</paper-button>
+          </div>
+          <div class="example">
+            <paper-button raised>Default</paper-button>
+            <paper-button raised primary>Primary</paper-button>
+            <paper-button raised secondary>Secondary</paper-button>
+            <paper-button raised success>Success</paper-button>
+            <paper-button raised info>Info</paper-button>
+            <paper-button raised warning>Warning</paper-button>
+            <paper-button raised error>Error</paper-button>
+            <paper-button link>Link</paper-button>
+          </div>
+          <div class="example">
+            <paper-button disabled>Default</paper-button>
+            <paper-button disabled primary>Primary</paper-button>
+            <paper-button disabled secondary>Secondary</paper-button>
+            <paper-button disabled success>Success</paper-button>
+            <paper-button disabled info>Info</paper-button>
+            <paper-button disabled warning>Warning</paper-button>
+            <paper-button disabled error>Error</paper-button>
+            <paper-button disabled link>Link</paper-button>
+          </div>
+        </section>
+
+        <section class="action-buttons" layout vertical center-center>
+          <h2 id="action-buttons">
+            <a href="http://www.polymer-project.org/docs/elements/paper-elements.html#paper-fab" target="_blank">
+              Action Buttons
+            </a>
+          </h2>
+          <div layout horizontal center>
+            <span flex>Default action button</span>
+            <paper-fab icon="star"></paper-fab>
+          </div>
+          <div layout horizontal center>
+            <span flex>Mini action button</span>
+            <paper-fab mini icon="favorite"></paper-fab>
+          </div>
+        </section>
+
+        <section class="icon-buttons" layout vertical center-center>
+          <h2 id="icon-buttons">
+            <a href="http://www.polymer-project.org/docs/elements/paper-elements.html#paper-icon-button" target="_blank">
+              Icon Buttons
+            </a>
+          </h2>
+          <div layout horizontal center>
+            <span flex>Default</span>
+            <paper-icon-button icon="menu"></paper-icon-button>
+            <paper-icon-button icon="check"></paper-icon-button>
+            <paper-icon-button icon="refresh"></paper-icon-button>
+          </div>
+          <div layout horizontal center>
+            <span flex>Toggle</span>
+            <paper-icon-button toggle icon="menu"></paper-icon-button>
+            <paper-icon-button toggle icon="check"></paper-icon-button>
+            <paper-icon-button toggle icon="refresh"></paper-icon-button>
+          </div>
+          <div layout horizontal center>
+            <span flex>Ripple fill</span>
+            <paper-icon-button fill icon="menu"></paper-icon-button>
+            <paper-icon-button fill icon="check"></paper-icon-button>
+            <paper-icon-button fill icon="refresh"></paper-icon-button>
+          </div>
+          <div layout horizontal center>
+            <span flex>Ripple fill toggle</span>
+            <paper-icon-button fill toggle icon="menu"></paper-icon-button>
+            <paper-icon-button fill toggle icon="check"></paper-icon-button>
+            <paper-icon-button fill toggle icon="refresh"></paper-icon-button>
+          </div>
+          <div layout horizontal center>
+            <span flex>Disabled</span>
+            <paper-icon-button disabled icon="menu"></paper-icon-button>
+            <paper-icon-button disabled icon="check"></paper-icon-button>
+            <paper-icon-button disabled icon="refresh"></paper-icon-button>
+          </div>
+        </section>
+
+      </main>
+
+      <footer>
+      </footer>
+    </core-header-panel>
+  </core-drawer-panel>
+  <a href="#">
+    <paper-fab class="add" icon="add"></paper-fab>
+  </a>
+
+</template>
+
+<script src="demo-element.js"></script>
+
+</polymer-element>

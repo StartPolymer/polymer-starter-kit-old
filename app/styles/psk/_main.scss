@@ -1,0 +1,21 @@
+// Roboto Font Combinations
+// https://github.com/StartPolymer/polymer-theme/wiki/Roboto-Font-Combinations
+$heading-font-name:     'roboto-slab';
+$font-lang:             'en';
+@import 'bower_components/polymer-theme/sass/fonts';
+
+body {
+  font-family: $body-font;
+
+  // Hack for mobile
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $heading-font;
+}
+
+@import 'themes';

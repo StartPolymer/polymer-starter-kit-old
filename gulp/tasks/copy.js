@@ -21,16 +21,16 @@ module.exports = function (gulp, plugins, config) { return function () {
       .pipe(gulp.dest('dist/bower_components')),
 
     gulp.src([
-      rootDir + '/elements/**/*.html',
+      rootDir + '/elements/**/*.{html,js}',
       '!' + rootDir + '/elements/elements.html'
       ])
       .pipe(gulp.dest('dist/elements')),
 
     gulp.src(rootDir + '/elements/elements.html')
       .pipe(plugins.rename('elements.vulcanized.html'))
-      .pipe(gulp.dest('dist/elements')),
+      .pipe(gulp.dest('dist/elements'))
 
-    gulp.src('app/pages/**/*.md')
-      .pipe(gulp.dest('dist/pages'))
+    //gulp.src('app/pages/**/*.md')
+    //  .pipe(gulp.dest('dist/pages'))
   ).pipe(plugins.size({title: 'copy'}));
 };};

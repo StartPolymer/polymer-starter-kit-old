@@ -1,20 +1,24 @@
-.polymer-theme-red-blue {
+.polymer-theme-red-amber {
   $primary-color-name:    'red';
-  $secondary-color-name:  'blue';
+  $secondary-color-name:  'amber';
   // Other variables are in this files
   // bower_components/polymer-theme/sass/variables
+  @import 'bower_components/polymer-theme/sass/variables';
+  $text-accent-color:     $secondary-text-color;
   @import 'theme-base';
 }
 
-.polymer-theme-pink-light-blue {
+.polymer-theme-pink-lime {
   $primary-color-name:    'pink';
-  $secondary-color-name:  'light-blue';
+  $secondary-color-name:  'lime';
+  @import 'bower_components/polymer-theme/sass/variables';
+  $text-accent-color:     $secondary-text-color;
   @import 'theme-base';
 }
 
-.polymer-theme-purple-yellow {
+.polymer-theme-purple-lime {
   $primary-color-name:    'purple';
-  $secondary-color-name:  'yellow';
+  $secondary-color-name:  'lime';
   @import 'bower_components/polymer-theme/sass/variables';
   $text-accent-color:     $dark-primary-color;
   @import 'theme-base';
@@ -60,9 +64,9 @@
   @import 'theme-base';
 }
 
-.polymer-theme-green-yellow {
+.polymer-theme-green-lime {
   $primary-color-name:    'green';
-  $secondary-color-name:  'yellow';
+  $secondary-color-name:  'lime';
   @import 'bower_components/polymer-theme/sass/variables';
   $text-accent-color:     $dark-primary-color;
   @import 'theme-base';
@@ -118,9 +122,11 @@
   @import 'theme-base';
 }
 
-.polymer-theme-grey-blue {
+.polymer-theme-grey-lime {
   $primary-color-name:    'grey';
-  $secondary-color-name:  'blue';
+  $secondary-color-name:  'lime';
+  @import 'bower_components/polymer-theme/sass/variables';
+  $text-accent-color:     $dark-primary-color;
   @import 'theme-base';
 }
 

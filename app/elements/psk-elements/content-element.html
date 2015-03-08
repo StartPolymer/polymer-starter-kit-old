@@ -1,0 +1,110 @@
+<link rel="import" href="../../bower_components/core-animated-pages/core-animated-pages.html"/>
+<link rel="import" href="../../bower_components/core-animated-pages/transitions/slide-from-right.html">
+
+<link rel="import" href="../../bower_components/paper-button/paper-button.html"/>
+<link rel="import" href="../../bower_components/paper-fab/paper-fab.html"/>
+<link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html"/>
+
+<polymer-element name="content-element" attributes="route" noscript>
+<template>
+
+  <div layout horizontal center-center fit>
+  <core-animated-pages selected="{{route}}" valueattr="data-route" transitions="slide-from-right">
+
+    <section data-route="home" class="buttons" layout vertical center-center>
+      <h2 id="buttons">
+        <a href="http://www.polymer-project.org/docs/elements/paper-elements.html#paper-button" target="_blank">
+          Buttons
+        </a>
+      </h2>
+      <div class="example">
+        <paper-button>Default</paper-button>
+        <paper-button primary>Primary</paper-button>
+        <paper-button secondary>Secondary</paper-button>
+        <paper-button success>Success</paper-button>
+        <paper-button info>Info</paper-button>
+        <paper-button warning>Warning</paper-button>
+        <paper-button error>Error</paper-button>
+        <paper-button link>Link</paper-button>
+      </div>
+      <div class="example">
+        <paper-button raised>Default</paper-button>
+        <paper-button raised primary>Primary</paper-button>
+        <paper-button raised secondary>Secondary</paper-button>
+        <paper-button raised success>Success</paper-button>
+        <paper-button raised info>Info</paper-button>
+        <paper-button raised warning>Warning</paper-button>
+        <paper-button raised error>Error</paper-button>
+        <paper-button link>Link</paper-button>
+      </div>
+      <div class="example">
+        <paper-button disabled>Default</paper-button>
+        <paper-button disabled primary>Primary</paper-button>
+        <paper-button disabled secondary>Secondary</paper-button>
+        <paper-button disabled success>Success</paper-button>
+        <paper-button disabled info>Info</paper-button>
+        <paper-button disabled warning>Warning</paper-button>
+        <paper-button disabled error>Error</paper-button>
+        <paper-button disabled link>Link</paper-button>
+      </div>
+    </section>
+
+    <section data-route="action-buttons" class="action-buttons" layout vertical center-center>
+      <h2 id="action-buttons">
+        <a href="http://www.polymer-project.org/docs/elements/paper-elements.html#paper-fab" target="_blank">
+          Action Buttons
+        </a>
+      </h2>
+      <div layout horizontal center>
+        <span flex>Default action button</span>
+        <paper-fab icon="star"></paper-fab>
+      </div>
+      <div layout horizontal center>
+        <span flex>Mini action button</span>
+        <paper-fab mini icon="favorite"></paper-fab>
+      </div>
+    </section>
+
+    <section data-route="icon-buttons" class="icon-buttons" layout vertical center-center>
+      <h2 id="icon-buttons">
+        <a href="http://www.polymer-project.org/docs/elements/paper-elements.html#paper-icon-button" target="_blank">
+          Icon Buttons
+        </a>
+      </h2>
+      <div layout horizontal center>
+        <span flex>Default</span>
+        <paper-icon-button icon="menu"></paper-icon-button>
+        <paper-icon-button icon="check"></paper-icon-button>
+        <paper-icon-button icon="refresh"></paper-icon-button>
+      </div>
+      <div layout horizontal center>
+        <span flex>Toggle</span>
+        <paper-icon-button toggle icon="menu"></paper-icon-button>
+        <paper-icon-button toggle icon="check"></paper-icon-button>
+        <paper-icon-button toggle icon="refresh"></paper-icon-button>
+      </div>
+      <div layout horizontal center>
+        <span flex>Ripple fill</span>
+        <paper-icon-button fill icon="menu"></paper-icon-button>
+        <paper-icon-button fill icon="check"></paper-icon-button>
+        <paper-icon-button fill icon="refresh"></paper-icon-button>
+      </div>
+      <div layout horizontal center>
+        <span flex>Ripple fill toggle</span>
+        <paper-icon-button fill toggle icon="menu"></paper-icon-button>
+        <paper-icon-button fill toggle icon="check"></paper-icon-button>
+        <paper-icon-button fill toggle icon="refresh"></paper-icon-button>
+      </div>
+      <div layout horizontal center>
+        <span flex>Disabled</span>
+        <paper-icon-button disabled icon="menu"></paper-icon-button>
+        <paper-icon-button disabled icon="check"></paper-icon-button>
+        <paper-icon-button disabled icon="refresh"></paper-icon-button>
+      </div>
+    </section>
+
+  </core-animated-pages>
+  </div>
+
+</template>
+</polymer-element>

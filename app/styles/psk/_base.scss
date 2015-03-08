@@ -1,5 +1,5 @@
 & {
-  background: $primary-background-color;
+  background: $background-primary-color;
   color: $primary-text-color;
 }
 
@@ -10,7 +10,7 @@ h3 {
 }
 
 .sidebar {
-  background: $secondary-background-color;
+  background: $primary-background-color;
 
   external-links {
     margin-top: 30px;
@@ -23,14 +23,27 @@ h3 {
   }
 }
 
-main {
+content-element::shadow {
   core-animated-pages {
-    height: 100%;
+    height: 98%;
     overflow: hidden;
-    width: 100%;
+    width: 98%;
+
+    > * {
+      background: $primary-background-color;
+      border-radius: 5px;
+      //position: relative;
+    }
+
+    @media all and (max-width: $phone-size-limit) {
+      height: 100%;
+      width: 100%;
+    }
   }
 
   section {
+    padding: 5px;
+
     h2 a:hover {
       text-decoration: underline;
     }
@@ -57,12 +70,13 @@ main {
   }
 }
 
-footer {
-  height: 50px;
-}
-
 paper-fab[icon="add"] {
-  bottom: 16px;
+  bottom: 32px;
   position: fixed;
-  right: 16px;
+  right: 32px;
+
+  @media all and (max-width: $phone-size-limit) {
+    bottom: 16px;
+    right: 16px;
+  }
 }

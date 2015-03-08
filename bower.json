@@ -3,9 +3,9 @@
   "private": true,
   "dependencies": {
     "core-elements": "Polymer/core-elements#^0.5",
+    "page": "visionmedia/page.js#^1.6",
     "paper-elements": "Polymer/paper-elements#^0.5",
     "polymer": "Polymer/polymer#^0.5",
-    "polymer-theme": "StartPolymer/polymer-theme#master",
-    "page": "visionmedia/page.js#^1.6"
+    "polymer-theme": "StartPolymer/polymer-theme#master"
   }
 }

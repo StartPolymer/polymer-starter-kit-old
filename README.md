@@ -15,9 +15,6 @@ Following [The 10 Commandments of Modern Web Application](https://gist.github.co
 ## Features
 
 - Using [Polymer Theme](https://github.com/StartPolymer/polymer-theme)
-- [Custom Icons](https://github.com/StartPolymer/polymer-starter-kit/blob/master/app/elements/custom-icons/psk-custom-icons.html),
-[External Links](https://github.com/StartPolymer/polymer-starter-kit/blob/master/app/elements/external-links/psk-external-links.html) and
-[Demo](https://github.com/StartPolymer/polymer-starter-kit/blob/master/app/elements/demo-element/demo-element.html) elements
 - [Sass](http://sass-lang.com) CSS Preprocessor with [Ruby](https://www.ruby-lang.org)
  - PSK need CSS Preprocessor for [Variables](http://sass-guidelin.es/#variables),
  [Loops](http://sass-guidelin.es/#loops),
@@ -28,6 +25,7 @@ Following [The 10 Commandments of Modern Web Application](https://gist.github.co
  - Check out the [styles](https://github.com/StartPolymer/polymer-starter-kit/tree/master/app/styles) dir
 - Ready to use any template engine
  - [How to add any template engine](https://github.com/StartPolymer/polymer-starter-kit/wiki/How-to-add-any-template-engine) for any developers
+- Routing using [Page.js](http://visionmedia.github.io/page.js/)
 - [Autoprefixer](https://github.com/postcss/autoprefixer) for CSS
 - [Asset revisioning](https://github.com/smysnk/gulp-rev-all)
 for CSS, HTML and JS by appending content hash to their filenames

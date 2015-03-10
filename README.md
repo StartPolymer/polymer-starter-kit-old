@@ -25,7 +25,6 @@ Following [The 10 Commandments of Modern Web Application](https://gist.github.co
  - Check out the [styles](https://github.com/StartPolymer/polymer-starter-kit/tree/master/app/styles) dir
 - Ready to use any template engine
  - [How to add any template engine](https://github.com/StartPolymer/polymer-starter-kit/wiki/How-to-add-any-template-engine) for any developers
-- Routing using [Page.js](http://visionmedia.github.io/page.js/)
 - [Autoprefixer](https://github.com/postcss/autoprefixer) for CSS
 - [Asset revisioning](https://github.com/smysnk/gulp-rev-all)
 for CSS, HTML and JS by appending content hash to their filenames

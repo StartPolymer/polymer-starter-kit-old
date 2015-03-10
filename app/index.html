@@ -3,8 +3,10 @@
 
 <head>
   <meta charset="utf-8">
+
   <title>Polymer Starter Kit</title>
   <meta name="description" content="">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Add to homescreen-->
@@ -56,82 +58,11 @@
 <body unresolved class="polymer-theme-indigo-pink">
 
   <template id="app" is="auto-binding">
-    <!-- Use CSS media queries for responsiveness-->
-    <!-- https://developers.google.com/web/fundamentals/layouts/rwd-fundamentals/use-media-queries-->
-    <core-media-query query="max-width: 640px" querymatches="{{isPhoneSize}}"></core-media-query>
-
-    <core-drawer-panel>
-      <!-- Drawer-->
-      <core-header-panel drawer class="sidebar">
-        <!-- Drawer Toolbar-->
-        <core-toolbar>
-          <span layout horizontal center hidden?="{{isPhoneSize}}">
-            <core-icon icon="custom-icons:start-polymer"></core-icon>
-            Polymer Starter Kit
-          </span>
-          <span hidden?="{{!isPhoneSize}}">
-            Menu
-          </span>
-        </core-toolbar>
-        <!-- Navigation links-->
-        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav-->
-        <nav><core-selector selected="{{route}}" valueattr="data-route">
-          <paper-item data-route="home">
-            <a href="/" layout horizontal center>
-              <!-- Hack for fit <a> element-->
-              <!-- https://github.com/Polymer/paper-item/issues/14-->
-              <span fit></span>
-              <core-icon icon="chevron-right"></core-icon>
-              Buttons
-            </a>
-          </paper-item>
-          <paper-item data-route="action-buttons">
-            <a href="/action-buttons" layout horizontal center>
-              <span fit></span>
-              <core-icon icon="chevron-right"></core-icon>
-              Action Buttons
-            </a>
-          </paper-item>
-          <paper-item data-route="icon-buttons">
-            <a href="/icon-buttons" layout horizontal center>
-              <span fit></span>
-              <core-icon icon="chevron-right"></core-icon>
-              Icon Buttons
-            </a>
-          </paper-item>
-        </core-selector></nav>
-        <div layout horizontal center-center>
-          <themes-menu></themes-menu>
-        </div>
-        <external-links layout horizontal center-center hidden?="{{!isPhoneSize}}"></external-links>
-      </core-header-panel>
-      <!-- Main-->
-      <core-header-panel main>
-        <a id="top"></a>
-        <!-- Main Toolbar-->
-        <core-toolbar>
-          <paper-icon-button icon="menu" core-drawer-toggle></paper-icon-button>
-          <span layout horizontal center flex hidden?="{{!isPhoneSize}}">
-            <core-icon icon="custom-icons:start-polymer"></core-icon>
-            Polymer Starter Kit
-          </span>
-          <span flex hidden?="{{isPhoneSize}}"></span>
-          <external-links hidden?="{{isPhoneSize}}"></external-links>
-        </core-toolbar>
-
-        <content-element route="{{route}}"></content-element>
-        
-      </core-header-panel>
-    </core-drawer-panel>
-
-    <a href="/action-buttons">
-      <paper-fab icon="add"></paper-fab>
-    </a>
+    <demo-element></demo-element>
   </template>
 
   <!-- build:js /scripts/app.js-->
   <!-- bower:js-->
-  <script src="/bower_components/page/page.js"></script>
   <!-- endbower-->
   <script src="/scripts/psk-app.js"></script>
   <!-- endbuild-->

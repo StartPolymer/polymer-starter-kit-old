@@ -92,10 +92,7 @@ gulp.task('default', ['clean'], function (cb) {
   require('run-sequence')(
 //    'views',
     ['copy', 'styles'],
-    [
-//      'jshint',
-      'images', 'fonts', 'html', 'styles:elements'
-    ],
+    ['jshint', 'images', 'fonts', 'html', 'styles:elements'],
     'vulcanize',
     'revreplace',
 //    'gzip',

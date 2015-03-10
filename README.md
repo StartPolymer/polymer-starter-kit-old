@@ -14,13 +14,15 @@ Following [The 10 Commandments of Modern Web Application](https://gist.github.co
 
 ## Features
 
+- Clean [index.html](https://github.com/StartPolymer/polymer-starter-kit/blob/master/app/index.html)
+- [Gulp tasks](https://github.com/StartPolymer/polymer-starter-kit/tree/master/gulp/tasks) per file
 - Using [Polymer Theme](https://github.com/StartPolymer/polymer-theme)
 - [Sass](http://sass-lang.com) CSS Preprocessor with [Ruby](https://www.ruby-lang.org)
  - PSK need CSS Preprocessor for [Variables](http://sass-guidelin.es/#variables),
  [Loops](http://sass-guidelin.es/#loops),
  [Mixins](http://sass-guidelin.es/#mixins) and other features
  - [LibSass](http://libsass.org) is a C/C++ port of the Sass engine
-   - [Replace Ruby Sass with LibSass](https://github.com/StartPolymer/polymer-starter-kit/issues/2) Issue
+   - [Replace Ruby Sass with LibSass](https://github.com/StartPolymer/polymer-starter-kit/issues/2) issue
  - SCSS have CSS like syntax
  - Check out the [styles](https://github.com/StartPolymer/polymer-starter-kit/tree/master/app/styles) dir
 - Ready to use any template engine

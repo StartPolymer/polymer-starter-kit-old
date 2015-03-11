@@ -1,20 +1,35 @@
-h1,
-h2,
-h3 {
-  font-family: $heading-font;
-}
-
 .sidebar {
   background: $primary-background-color;
 
-  external-links {
-    margin: 24px 0;
+  &__widget {
+    padding: 16px 0;
 
-    &::shadow paper-icon-button::shadow #icon {
-      color: $link-color;
+    &_last {
+      padding-bottom: 24px;
+    }
+
+    external-links /deep/ core-icon {
       height: 24px;
       width: 24px;
     }
+  }
+}
+
+.section {
+  // 100vh - 64px - 16px - 16px
+  min-height: calc(100vh - 96px);
+  padding: 8px;
+
+  &_buttons .pt-button {
+    margin-bottom: 5px;
+  }
+
+  &__title a:hover {
+    text-decoration: underline;
+  }
+
+  &__example {
+    padding: 10px 0;
   }
 }
 
@@ -36,27 +51,6 @@ content-element::shadow {
       height: 100%;
       width: 100%;
     }
-  }
-
-  section {
-    padding: 5px;
-
-    h2 a:hover {
-      text-decoration: underline;
-    }
-
-    &>div {
-      // 100vh - 64px - 10px - 16px
-      min-height: calc(100vh - 90px);
-    }
-
-    .example {
-      padding: 10px 0;
-    }
-  }
-
-  .buttons paper-button {
-    margin-bottom: 5px;
   }
 
   .action-buttons .example {

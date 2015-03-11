@@ -1,8 +1,9 @@
-<link rel="import" href="/bower_components/core-animated-pages/core-animated-pages.html"/>
-<link rel="import" href="/bower_components/core-animated-pages/transitions/slide-from-right.html">
+<link rel="import" href="../../bower_components/core-animated-pages/core-animated-pages.html"/>
+<link rel="import" href="../../bower_components/core-animated-pages/transitions/slide-from-right.html">
 
-<link rel="import" href="/bower_components/paper-fab/paper-fab.html"/>
-<link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html"/>
+<link rel="import" href="../../bower_components/paper-button/paper-button.html"/>
+<link rel="import" href="../../bower_components/paper-fab/paper-fab.html"/>
+<link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html"/>
 
 <polymer-element name="content-element" attributes="route" noscript>
 <template>
@@ -10,7 +11,45 @@
   <div layout horizontal center-center fit>
   <core-animated-pages selected="{{route}}" valueattr="data-route" transitions="slide-from-right">
 
-    <buttons-section data-route="home"></buttons-section>
+    <section data-route="home" class="buttons">
+      <div layout vertical center-center>
+        <h2 id="buttons">
+          <a href="http://www.polymer-project.org/docs/elements/paper-elements.html#paper-button" target="_blank">
+            Buttons
+          </a>
+        </h2>
+        <div class="example">
+          <paper-button>Default</paper-button>
+          <paper-button primary>Primary</paper-button>
+          <paper-button secondary>Secondary</paper-button>
+          <paper-button success>Success</paper-button>
+          <paper-button info>Info</paper-button>
+          <paper-button warning>Warning</paper-button>
+          <paper-button error>Error</paper-button>
+          <paper-button link>Link</paper-button>
+        </div>
+        <div class="example">
+          <paper-button raised>Default</paper-button>
+          <paper-button raised primary>Primary</paper-button>
+          <paper-button raised secondary>Secondary</paper-button>
+          <paper-button raised success>Success</paper-button>
+          <paper-button raised info>Info</paper-button>
+          <paper-button raised warning>Warning</paper-button>
+          <paper-button raised error>Error</paper-button>
+          <paper-button link>Link</paper-button>
+        </div>
+        <div class="example">
+          <paper-button disabled>Default</paper-button>
+          <paper-button disabled primary>Primary</paper-button>
+          <paper-button disabled secondary>Secondary</paper-button>
+          <paper-button disabled success>Success</paper-button>
+          <paper-button disabled info>Info</paper-button>
+          <paper-button disabled warning>Warning</paper-button>
+          <paper-button disabled error>Error</paper-button>
+          <paper-button disabled link>Link</paper-button>
+        </div>
+      </div>
+    </section>
 
     <section data-route="action-buttons" class="action-buttons">
       <div layout vertical center-center>

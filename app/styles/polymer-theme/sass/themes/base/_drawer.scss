@@ -1,0 +1,29 @@
+.drawer {
+  background: $color-background;
+  color: $color-primary-dark;
+
+  &__content {
+    border-right: 1px solid $color-divider;
+    height: calc(100vh - #{$toolbar-size-height});
+
+    @media all and (max-width: $phone-width-max) {
+      border: 0;
+    }
+  }
+
+  &__footer {
+    padding: 8px 0 16px;
+  }
+
+  &__nav {
+    // empty
+  }
+
+  &__toolbar {
+    // empty
+  }
+
+  &__widget {
+    padding: 8px 0;
+  }
+}

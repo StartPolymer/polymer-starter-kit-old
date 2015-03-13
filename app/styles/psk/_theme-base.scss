@@ -1,12 +1,9 @@
 @import 'bower_components/polymer-theme/sass/variables';
 
-& {
-  background: $background-primary-color;
-  color: $primary-text-color;
-}
-
 /deep/ {
   @import 'bower_components/polymer-theme/sass/elements/all';
-  @import 'polymer-theme';
+  //@import 'polymer-theme';
+  @import '../polymer-theme/sass/themes/base/base';
+
   @import 'base';
 }

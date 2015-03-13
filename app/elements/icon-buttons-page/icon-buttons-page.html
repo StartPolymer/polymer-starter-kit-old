@@ -1,0 +1,52 @@
+<link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html"/>
+
+<polymer-element name="icon-buttons-page" noscript>
+<template>
+
+  <link rel="stylesheet" href="icon-buttons-page.css">
+
+  <div class="page" layout vertical center-center>
+    <h2 class="page__title">
+      <a href="https://www.polymer-project.org/0.5/docs/elements/paper-icon-button.html" target="_blank">
+        Icon Buttons
+      </a>
+    </h2>
+
+    <div class="page__example" layout horizontal center>
+      <span flex>Default</span>
+      <paper-icon-button class="icon-button" icon="menu"></paper-icon-button>
+      <paper-icon-button class="icon-button" icon="check"></paper-icon-button>
+      <paper-icon-button class="icon-button" icon="refresh"></paper-icon-button>
+    </div>
+
+    <div class="page__example" layout horizontal center>
+      <span flex>Toggle</span>
+      <paper-icon-button class="icon-button" toggle icon="menu"></paper-icon-button>
+      <paper-icon-button class="icon-button" toggle icon="check"></paper-icon-button>
+      <paper-icon-button class="icon-button" toggle icon="refresh"></paper-icon-button>
+    </div>
+
+    <div class="page__example" layout horizontal center>
+      <span flex>Ripple fill</span>
+      <paper-icon-button class="icon-button" fill icon="menu"></paper-icon-button>
+      <paper-icon-button class="icon-button" fill icon="check"></paper-icon-button>
+      <paper-icon-button class="icon-button" fill icon="refresh"></paper-icon-button>
+    </div>
+
+    <div class="page__example" layout horizontal center>
+      <span flex>Ripple fill toggle</span>
+      <paper-icon-button class="icon-button" fill toggle icon="menu"></paper-icon-button>
+      <paper-icon-button class="icon-button" fill toggle icon="check"></paper-icon-button>
+      <paper-icon-button class="icon-button" fill toggle icon="refresh"></paper-icon-button>
+    </div>
+
+    <div class="page__example" layout horizontal center>
+      <span flex>Disabled</span>
+      <paper-icon-button class="icon-button" disabled icon="menu"></paper-icon-button>
+      <paper-icon-button class="icon-button" disabled icon="check"></paper-icon-button>
+      <paper-icon-button class="icon-button" disabled icon="refresh"></paper-icon-button>
+    </div>
+  </div>
+
+</template>
+</polymer-element>

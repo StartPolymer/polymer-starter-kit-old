@@ -1,0 +1,19 @@
+paper-item {
+  color: $link-color;
+  transition: all 300ms ease-in-out;
+
+  &.core-selected {
+    background: $accent-color;
+    color: $text-accent-color;
+  }
+
+  &::shadow paper-ripple {
+    color: $accent-color;
+  }
+
+  core-icon {
+    height: 1.5em;
+    margin-right: .5em;
+    width: 1.5em;
+  }
+}

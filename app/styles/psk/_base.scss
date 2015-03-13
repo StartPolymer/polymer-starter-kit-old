@@ -1,31 +1,10 @@
-.sidebar {
-  background: $primary-background-color;
-
-  &__widget {
-    padding: 16px 0;
-
-    &_last {
-      padding-bottom: 24px;
-    }
-
-    external-links /deep/ core-icon {
-      height: 24px;
-      width: 24px;
-    }
-  }
-}
-
 .section {
   // 100vh - 64px - 16px - 16px
-  min-height: calc(100vh - 96px);
-  padding: 8px;
+  //min-height: calc(100vh - 96px);
+  //padding: 8px;
 
   &_buttons .pt-button {
     margin-bottom: 5px;
-  }
-
-  &__title a:hover {
-    text-decoration: underline;
   }
 
   &__example {
@@ -33,46 +12,42 @@
   }
 }
 
-content-element::shadow {
-  core-animated-pages {
-    // 100vh - 64px - 16px
-    height: calc(100vh - 80px);
-    overflow: hidden;
-    //100vw - 256px - 16px
-    width: calc(100vw - 272px);
+.main {
+  //overflow: auto;
+}
 
-    > * {
-      background: $primary-background-color;
-      border-radius: 5px;
-      overflow: auto;
-    }
+content-element {
+  //min-height: calc(100vh - 96px);
+  //height: 1000px;
+  //min-height: calc(100vh - 96px);
+  //width: 100%;
+
+}
+
+  .page {
+    // 100vh - 64px - 16px
+    //height: calc(100vh - 80px);
+    //overflow: hidden;
+    //100vw - 256px - 16px
+    //width: calc(100vw - 272px);
+    //height: 100%;
+
+
+
+      //padding-top: calc((100vh - 64px - 16px)/3);
+      //background: $primary-background-color;
+      //border-radius: 5px;
+      //overflow: auto;
+
 
     @media all and (max-width: $phone-size-limit) {
-      height: 100%;
-      width: 100%;
+      padding-top: 0;
+      //height: 100%;
+      //width: 100%;
     }
   }
 
-  .action-buttons .example {
-    width: 220px;
-
-    paper-fab[mini] {
-      margin-right: 7px;
-    }
-  }
 
   .icon-buttons .example {
     width: 250px;
   }
-}
-
-paper-fab[icon="add"] {
-  bottom: 32px;
-  position: fixed;
-  right: 32px;
-
-  @media all and (max-width: $phone-size-limit) {
-    bottom: 16px;
-    right: 16px;
-  }
-}

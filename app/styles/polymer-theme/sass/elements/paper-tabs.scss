@@ -1,0 +1,12 @@
+paper-tabs {
+  background: $primary-color;
+  color: $text-primary-color;
+
+  paper-tab::shadow #ink {
+    color: $accent-color;
+  }
+
+  &::shadow #selectionBar {
+    background: $accent-color;
+  }
+}

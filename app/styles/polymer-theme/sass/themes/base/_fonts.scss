@@ -1,0 +1,11 @@
+@import 'modules/roboto-fonts';
+
+// Roboto Font Combinations
+// https://github.com/StartPolymer/polymer-theme/wiki/Roboto-Font-Combinations
+$heading-font-name:     'roboto-slab' !default;
+$font-lang:             'en' !default;
+$heading-font:          roboto-font($heading-font-name, 'heading') !default;
+$body-font:             roboto-font($heading-font-name, 'body') !default;
+$font-url: roboto-font($heading-font-name, 'url') + '&lang=' + $font-lang !default;
+
+@import url($font-url);

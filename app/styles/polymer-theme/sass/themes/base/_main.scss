@@ -1,0 +1,25 @@
+.main {
+  &__content {
+    background: $color-background;
+    color: $color-text;
+
+    /deep/ a:hover {
+      text-decoration: underline;
+    }
+
+    .fab {
+      bottom: 32px;
+      position: fixed;
+      right: 32px;
+
+      @media all and (max-width: $phone-width-max) {
+        bottom: 16px;
+        right: 16px;
+      }
+    }
+  }
+
+  &__toolbar {
+    // empty
+  }
+}

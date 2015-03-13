@@ -1,0 +1,79 @@
+// Roboto Font Combinations
+// https://gist.github.com/8faa215aca23696a3e3c
+
+$roboto-fonts: (
+  'alegreya': (
+    'heading': 'Alegreya, serif',
+    'body': 'RobotoDraft, Roboto, "Helvetica Neue", sans-serif',
+    'url': '//fonts.googleapis.com/css?family=RobotoDraft:regular,bold|Alegreya:bold'
+  ),
+  'amatic': (
+    'heading': '"Amatic SC", cursive',
+    'body': '"Roboto Condensed", "Helvetica Neue", sans-serif',
+    'url': '//fonts.googleapis.com/css?family=Roboto+Condensed:regular,bold|Amatic+SC:bold'
+  ),
+  'droid-serif': (
+    'heading': '"Droid Serif", serif',
+    'body': 'RobotoDraft, Roboto, "Helvetica Neue", sans-serif',
+    'url': '//fonts.googleapis.com/css?family=RobotoDraft:regular,bold|Droid+Serif:bold'
+  ),
+  'great-vibes': (
+    'heading': '"Great Vibes", cursive',
+    'body': 'RobotoDraft, Roboto, "Helvetica Neue", sans-serif',
+    'url': '//fonts.googleapis.com/css?family=RobotoDraft:regular,bold|Great+Vibes:bold'
+  ),
+  'raleway': (
+    'heading': 'Raleway, sans-serif',
+    'body': 'RobotoDraft, Roboto, "Helvetica Neue", sans-serif',
+    'url': '//fonts.googleapis.com/css?family=RobotoDraft:regular,bold|Raleway:bold'
+  ),
+  'roboto': (
+    'heading': 'RobotoDraft, Roboto, "Helvetica Neue", sans-serif',
+    'body': 'RobotoDraft, Roboto, "Helvetica Neue", sans-serif',
+    'url': '//fonts.googleapis.com/css?family=RobotoDraft:regular,bold'
+  ),
+  'roboto-slab': (
+    'heading': '"Roboto Slab", serif',
+    'body': 'RobotoDraft, Roboto, "Helvetica Neue", sans-serif',
+    'url': '//fonts.googleapis.com/css?family=RobotoDraft:regular,bold|Roboto+Slab:bold'
+  ),
+  'rokkitt': (
+    'heading': 'Rokkitt, serif',
+    'body': 'RobotoDraft, Roboto, "Helvetica Neue", sans-serif',
+    'url': '//fonts.googleapis.com/css?family=RobotoDraft:regular,bold|Rokkitt:bold'
+  ),
+  'shadows': (
+    'heading': '"Shadows Into Light", cursive',
+    'body': 'RobotoDraft, Roboto, "Helvetica Neue", sans-serif',
+    'url': '//fonts.googleapis.com/css?family=RobotoDraft:regular,bold|Shadows+Into+Light:bold'
+  ),
+  'yanone': (
+    'heading': '"Yanone Kaffeesatz", sans-serif',
+    'body': 'RobotoDraft, Roboto, "Helvetica Neue", sans-serif',
+    'url': '//fonts.googleapis.com/css?family=RobotoDraft:regular,bold|Yanone+Kaffeesatz:bold'
+  )
+);
+
+
+/**
+ * Retrieves a font name from the $roboto-fonts Sass map
+ *
+ * @function
+ * @param {string} font-name             - quoted, lower-case, dasherized font
+ *                                          name (e.g. 'alegreya')
+ * @param {string} [font-type='heading']  - quoted, lower-case font type (e.g.
+ *                                          'heading')
+ */
+@function roboto-font($font-name, $font-type: 'heading') {
+  $font: map-get(map-get($roboto-fonts, $font-name), $font-type);
+  @if $font {
+    @if $font-type == 'url' {
+      @return $font;
+    } @else {
+      @return unquote($font);
+    }
+  } @else {
+    // Libsass still doesn't seem to support @error
+    @warn '=> ERROR: FONT NOT FOUND! <= | Your $font-name, $font-type combination did not match any of the values in the $roboto-fonts map.';
+  }
+}

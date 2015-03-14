@@ -5,7 +5,7 @@
 <polymer-element name="themes-menu">
   <template>
 
-    <paper-dropdown-menu label="Select Theme">
+    <paper-dropdown-menu class="dropdown-menu dropdown-menu_primary" label="Select Theme">
       <paper-dropdown class="dropdown">
         <core-menu valueattr="data-theme" on-core-select="{{themeSelected}}" class="menu">
           <template repeat="{{theme, i in themes}}">

@@ -1,0 +1,25 @@
+.dropdown-menu {
+  &_primary {
+    color: $color-primary-dark;
+  }
+
+  &_secondary {
+    color: $color-secondary-dark;
+  }
+
+  &_success {
+    color: $color-success-dark;
+  }
+
+  &_info {
+    color: $color-info-dark;
+  }
+
+  &_warning {
+    color: $color-warning-dark;
+  }
+
+  &_error {
+    color: $color-error-dark;
+  }
+}

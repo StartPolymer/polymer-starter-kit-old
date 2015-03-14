@@ -1,0 +1,92 @@
+.button {
+  &_primary {
+    color: $color-primary-dark;
+  }
+
+  &_secondary {
+    color: $color-secondary-dark;
+  }
+
+  &_success {
+    color: $color-success-dark;
+  }
+
+  &_info {
+    color: $color-info-dark;
+  }
+
+  &_warning {
+    color: $color-warning-dark;
+  }
+
+  &_error {
+    color: $color-error-dark;
+  }
+
+  &_link {
+    color: $color-link;
+  }
+
+  &_disabled {
+    &_primary {
+      color: $color-primary-light;
+    }
+
+    &_secondary {
+      color: $color-secondary-light;
+    }
+
+    &_success {
+      color: $color-success-light;
+    }
+
+    &_info {
+      color: $color-info-light;
+    }
+
+    &_warning {
+      color: $color-warning-light;
+    }
+
+    &_error {
+      color: $color-error-light;
+    }
+
+    &_link {
+      background: transparent;
+      color: $color-link-disabled;
+    }
+  }
+
+  &_raised {
+    &_primary {
+      background: $color-primary;
+      color: $color-primary-text;
+    }
+
+    &_secondary {
+      background: $color-secondary;
+      color: $color-secondary-text;
+    }
+
+    &_success {
+      background: $color-success;
+      color: $color-success-text;
+    }
+
+    &_info {
+      background: $color-info;
+      color: $color-info-text;
+    }
+
+    &_warning {
+      background: $color-warning;
+      color: $color-warning-text;
+    }
+
+    &_error {
+      background: $color-error;
+      color: $color-error-text;
+    }
+  }
+}

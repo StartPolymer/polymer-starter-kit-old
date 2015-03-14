@@ -66,15 +66,21 @@ $color-error-lightest:      material-color($color-name-error, '50') !default;
 $color-error-text:          #fff !default; // Icons color
 
 $color-text:                material-color('grey', '900') !default;
-$color-text-secondary:      material-color('grey', '600') !default; // Icons color
+$color-text-minor:          material-color('grey', '600') !default; // Icons color
 $color-text-hint:           material-color('grey', '400') !default;
 $color-text-disabled:       material-color('grey', '400') !default;
+$color-text-primary:        $color-primary-dark !default;
+$color-text-secondary:      $color-secondary-dark !default;
+$color-text-success:        $color-success-dark !default;
+$color-text-info:           $color-info-dark !default;
+$color-text-warning:        $color-warning-dark !default;
+$color-text-error:          $color-error-dark !default;
 
 $color-background:          #fff !default;
-$color-background-secondary:material-color('grey', '100') !default;
+$color-background-minor:    material-color('grey', '100') !default;
 $color-divider:             material-color('grey', '300') !default;
 $color-link:                $color-primary-dark !default;
-$color-link-disabled:       $color-primary-light !default;
+$color-link-disabled:       $color-primary-lighter !default;
 
 
 // Element sizes

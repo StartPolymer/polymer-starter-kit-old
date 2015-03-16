@@ -1,51 +1,51 @@
 .icon-button {
   &_primary {
-    color: $color-primary-dark;
+    color: $color-text-primary;
   }
 
   &_secondary {
-    color: $color-secondary-dark;
+    color: $color-text-secondary;
   }
 
   &_success {
-    color: $color-success-dark;
+    color: $color-text-success;
   }
 
   &_info {
-    color: $color-info-dark;
+    color: $color-text-info;
   }
 
   &_warning {
-    color: $color-warning-dark;
+    color: $color-text-warning;
   }
 
   &_error {
-    color: $color-error-dark;
+    color: $color-text-error;
   }
 
   &_disabled {
     &_primary {
-      color: $color-primary-lighter;
+      color: $color-text-primary-disabled;
     }
 
     &_secondary {
-      color: $color-secondary-lighter;
+      color: $color-text-secondary-disabled;
     }
 
     &_success {
-      color: $color-success-lighter;
+      color: $color-text-success-disabled;
     }
 
     &_info {
-      color: $color-info-lighter;
+      color: $color-text-info-disabled;
     }
 
     &_warning {
-      color: $color-warning-lighter;
+      color: $color-text-warning-disabled;
     }
 
     &_error {
-      color: $color-error-lighter;
+      color: $color-text-error-disabled;
     }
   }
 }

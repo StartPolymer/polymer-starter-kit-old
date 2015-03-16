@@ -1,30 +1,30 @@
 .button {
   &_primary {
-    color: $color-primary-dark;
+    color: $color-text-primary;
   }
 
   &_secondary {
-    color: $color-secondary-dark;
+    color: $color-text-secondary;
   }
 
   &_success {
-    color: $color-success-dark;
+    color: $color-text-success;
   }
 
   &_info {
-    color: $color-info-dark;
+    color: $color-text-info;
   }
 
   &_warning {
-    color: $color-warning-dark;
+    color: $color-text-warning;
   }
 
   &_error {
-    color: $color-error-dark;
+    color: $color-text-error;
   }
 
   &_link {
-    color: $color-link;
+    color: $color-text-link;
   }
 
   &_disabled {
@@ -54,7 +54,7 @@
 
     &_link {
       background: transparent;
-      color: $color-link-disabled;
+      color: $color-text-link-disabled;
     }
   }
 

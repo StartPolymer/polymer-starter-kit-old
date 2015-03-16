@@ -1,3 +1,5 @@
+@import '../polymer-theme/sass/variables';
+
 // Media Query
 $phone-size-limit:      '640px';
 
@@ -5,15 +7,14 @@ $phone-size-limit:      '640px';
 // https://github.com/StartPolymer/polymer-theme/wiki/Roboto-Font-Combinations
 $heading-font-name:     'roboto-slab';
 $font-lang:             'en';
-@import 'bower_components/polymer-theme/sass/fonts';
+@import '../polymer-theme/sass/fonts/base';
+
+@import '../polymer-theme/sass/reset';
 
 body {
   font-family: $body-font;
-
-  // Hack for mobile
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-touch-callout: none;
-
+  @extend .text_body_1;
+  
   /deep/ {
     h1,
     h2,

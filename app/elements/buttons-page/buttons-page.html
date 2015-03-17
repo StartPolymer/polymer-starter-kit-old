@@ -3,17 +3,15 @@
 <polymer-element name="buttons-page" noscript>
 <template>
 
-  <link rel="stylesheet" href="buttons-page.css">
-
-  <div class="page" layout vertical center-center>
+  <div class="page page_buttons" layout vertical center-center>
     <h2 class="page__title">
       <a href="https://www.polymer-project.org/0.5/docs/elements/paper-button.html" target="_blank">
         Buttons
       </a>
     </h2>
 
-    <div class="page__example">
-      <paper-button>Default</paper-button>
+    <div class="page__section">
+      <paper-button class="button">Default</paper-button>
       <paper-button class="button button_primary">Primary</paper-button>
       <paper-button class="button button_secondary">Secondary</paper-button>
       <paper-button class="button button_success">Success</paper-button>
@@ -23,26 +21,26 @@
       <paper-button class="button button_link">Link</paper-button>
     </div>
 
-    <div class="page__example">
-      <paper-button raised>Default</paper-button>
-      <paper-button class="button button_raised_primary" raised>Primary</paper-button>
-      <paper-button class="button button_raised_secondary" raised>Secondary</paper-button>
-      <paper-button class="button button_raised_success" raised>Success</paper-button>
-      <paper-button class="button button_raised_info" raised>Info</paper-button>
-      <paper-button class="button button_raised_warning" raised>Warning</paper-button>
-      <paper-button class="button button_raised_error" raised>Error</paper-button>
-      <paper-button class="button button_link">Link</paper-button>
+    <div class="page__section">
+      <paper-button class="button" raised>Default</paper-button>
+      <paper-button class="button button_primary_raised" raised>Primary</paper-button>
+      <paper-button class="button button_secondary_raised" raised>Secondary</paper-button>
+      <paper-button class="button button_success_raised" raised>Success</paper-button>
+      <paper-button class="button button_info_raised" raised>Info</paper-button>
+      <paper-button class="button button_warning_raised" raised>Warning</paper-button>
+      <paper-button class="button button_error_raised" raised>Error</paper-button>
+      <paper-button class="button button_link_raised">Link</paper-button>
     </div>
-    
-    <div class="page__example">
-      <paper-button disabled>Default</paper-button>
-      <paper-button class="button button_disabled_primary" disabled>Primary</paper-button>
-      <paper-button class="button button_disabled_secondary" disabled>Secondary</paper-button>
-      <paper-button class="button button_disabled_success" disabled>Success</paper-button>
-      <paper-button class="button button_disabled_info" disabled>Info</paper-button>
-      <paper-button class="button button_disabled_warning" disabled>Warning</paper-button>
-      <paper-button class="button button_disabled_error" disabled>Error</paper-button>
-      <paper-button class="button button_disabled_link" disabled>Link</paper-button>
+
+    <div class="page__section">
+      <paper-button class="button" disabled>Default</paper-button>
+      <paper-button class="button button_primary_disabled" disabled>Primary</paper-button>
+      <paper-button class="button button_secondary_disabled" disabled>Secondary</paper-button>
+      <paper-button class="button button_success_disabled" disabled>Success</paper-button>
+      <paper-button class="button button_info_disabled" disabled>Info</paper-button>
+      <paper-button class="button button_warning_disabled" disabled>Warning</paper-button>
+      <paper-button class="button button_error_disabled" disabled>Error</paper-button>
+      <paper-button class="button button_link_disabled" disabled>Link</paper-button>
     </div>
   </div>
 

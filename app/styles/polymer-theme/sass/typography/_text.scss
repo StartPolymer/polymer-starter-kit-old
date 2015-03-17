@@ -1,8 +1,8 @@
 // Based on Material Design Typography
-// http://www.google.com/design/spec/style/typography.html
+// http://www.google.com/design/spec/style/typography.html#typography-standard-styles
 // Inspired by http://brm.io/material-design-type/
 
-.text {
+& {
   &_display {
     &_4 {
       font-size: 112px;
@@ -14,38 +14,42 @@
     &_3 {
       font-size: 56px;
       font-weight: 400;
-      line-height: 64px;
+      letter-spacing: -1px;
+      line-height: 72px;
     }
 
     &_2 {
       font-size: 45px;
       font-weight: 400;
-      line-height: 64px;
+      letter-spacing: -1px;
+      line-height: 61px;
     }
 
     &_1 {
       font-size: 34px;
       font-weight: 400;
-      line-height: 52px;
+      line-height: 50px;
     }
   }
 
   &_headline {
     font-size: 24px;
     font-weight: 400;
-    line-height: 44px;
+    line-height: 32px;
   }
 
   &_title {
     font-size: 20px;
     font-weight: 500;
-    line-height: 44px;
+    letter-spacing: .05px;
+    line-height: 28px;
   }
 
   &_subhead {
     font-size: 15px;
     font-weight: 400;
-    line-height: 32px;
+    letter-spacing: .1px;
+    line-height: 24px;
 
     @media all and (max-width: $phone-width-max) {
       font-size: 16px;
@@ -56,7 +60,8 @@
     &_2 {
       font-size: 13px;
       font-weight: 500;
-      line-height: 25px;
+      letter-spacing: .1px;
+      line-height: 24px;
 
       @media all and (max-width: $phone-width-max) {
         font-size: 14px;
@@ -66,7 +71,8 @@
     &_1 {
       font-size: 13px;
       font-weight: 400;
-      line-height: 25px;
+      letter-spacing: .1px;
+      line-height: 24px;
 
       @media all and (max-width: $phone-width-max) {
         font-size: 14px;
@@ -77,13 +83,14 @@
   &_caption {
     font-size: 12px;
     font-weight: 400;
-    line-height: 32px;
+    letter-spacing: .2px;
+    line-height: 20px;
   }
 
   &_button {
     font-size: 14px;
     font-weight: 500;
-    letter-spacing: 1px;
+    letter-spacing: .1px;
     line-height: 20px;
     text-transform: uppercase;
   }

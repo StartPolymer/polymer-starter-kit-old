@@ -1,9 +1,10 @@
-@import 'bower_components/polymer-theme/sass/variables';
+//@import 'bower_components/polymer-theme/sass/variables';
+@import '../polymer-theme/sass/variables';
 
 /deep/ {
   //@import 'bower_components/polymer-theme/sass/elements/all';
   //@import 'polymer-theme';
-  @import '../polymer-theme/sass/themes/base/base';
+  @import '../polymer-theme/sass/base';
 
   //@import 'base';
 }

@@ -15,9 +15,12 @@
 <link rel="import" href="../buttons-page/buttons-page.html"/>
 <link rel="import" href="../action-buttons-page/action-buttons-page.html"/>
 <link rel="import" href="../icon-buttons-page/icon-buttons-page.html"/>
+<link rel="import" href="../typography-page/typography-page.html"/>
 
 <polymer-element name="polymer-demo" noscript>
 <template>
+
+  <link rel="stylesheet" href="polymer-demo.css">
 
   <!-- Use CSS media queries for responsiveness-->
   <!-- https://developers.google.com/web/fundamentals/layouts/rwd-fundamentals/use-media-queries-->
@@ -63,6 +66,13 @@
               Icon Buttons
             </a>
           </paper-item>
+          <paper-item data-route="typography">
+            <a href="#" layout horizontal center>
+              <span fit></span>
+              <core-icon icon="chevron-right"></core-icon>
+              Typography
+            </a>
+          </paper-item>
         </core-selector></nav>
 
         <div class="drawer__widget" layout horizontal center-center>
@@ -88,10 +98,11 @@
       </core-toolbar>
 
       <div class="main__content">
-        <core-animated-pages selected="{{route}}" valueattr="data-route" transitions="slide-from-right">
+        <core-animated-pages class="pages" selected="{{route}}" valueattr="data-route" transitions="slide-from-right">
           <buttons-page data-route="home"></buttons-page>
           <action-buttons-page data-route="action-buttons"></action-buttons-page>
           <icon-buttons-page data-route="icon-buttons"></icon-buttons-page>
+          <typography-page data-route="typography"></typography-page>
         </core-animated-pages>
 
         <a href="#">

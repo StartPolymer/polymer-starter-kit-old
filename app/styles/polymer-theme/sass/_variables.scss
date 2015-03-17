@@ -2,81 +2,81 @@
 
 // Material Design Colors
 // http://www.google.com/design/spec/style/color.html#color-color-palette
-$color-name-primary:        'indigo' !default;
-$color-name-secondary:      'pink' !default;
-$color-name-accent:         $color-name-secondary !default;
+$color-name-primary:            'indigo' !default;
+$color-name-secondary:          'pink' !default;
+$color-name-accent:             $color-name-secondary !default;
 
-$color-name-success:        'green' !default;
-$color-name-info:           'light-blue' !default;
-$color-name-warning:        'amber' !default;
-$color-name-error:          'red' !default;
+$color-name-success:            'green' !default;
+$color-name-info:               'light-blue' !default;
+$color-name-warning:            'amber' !default;
+$color-name-error:              'red' !default;
 
-$color-primary:             material-color($color-name-primary, '500') !default;
-$color-primary-dark:        material-color($color-name-primary, '700') !default;
-$color-primary-darker:      material-color($color-name-primary, '800') !default;
-$color-primary-darkest:     material-color($color-name-primary, '900') !default;
-$color-primary-light:       material-color($color-name-primary, '300') !default;
-$color-primary-lighter:     material-color($color-name-primary, '100') !default;
-$color-primary-lightest:    material-color($color-name-primary, '50') !default;
-$color-primary-text:        #fff !default; // Icons color
+$color-primary:                 material-color($color-name-primary, '500') !default;
+$color-primary-dark:            material-color($color-name-primary, '700') !default;
+$color-primary-darker:          material-color($color-name-primary, '800') !default;
+$color-primary-darkest:         material-color($color-name-primary, '900') !default;
+$color-primary-light:           material-color($color-name-primary, '300') !default;
+$color-primary-lighter:         material-color($color-name-primary, '100') !default;
+$color-primary-lightest:        material-color($color-name-primary, '50') !default;
+$color-primary-text:            #fff !default; // Icons color
 
-$color-secondary:           material-color($color-name-secondary, '500') !default;
-$color-secondary-dark:      material-color($color-name-secondary, '700') !default;
-$color-secondary-darker:    material-color($color-name-secondary, '800') !default;
-$color-secondary-darkest:   material-color($color-name-secondary, '900') !default;
-$color-secondary-light:     material-color($color-name-secondary, '300') !default;
-$color-secondary-lighter:   material-color($color-name-secondary, '100') !default;
-$color-secondary-lightest:  material-color($color-name-secondary, '50') !default;
-$color-secondary-text:      #fff !default; // Icons color
+$color-secondary:               material-color($color-name-secondary, '500') !default;
+$color-secondary-dark:          material-color($color-name-secondary, '700') !default;
+$color-secondary-darker:        material-color($color-name-secondary, '800') !default;
+$color-secondary-darkest:       material-color($color-name-secondary, '900') !default;
+$color-secondary-light:         material-color($color-name-secondary, '300') !default;
+$color-secondary-lighter:       material-color($color-name-secondary, '100') !default;
+$color-secondary-lightest:      material-color($color-name-secondary, '50') !default;
+$color-secondary-text:          #fff !default; // Icons color
 
-$color-accent:              material-color($color-name-accent, 'a200') !default;
-$color-accent-dark:         material-color($color-name-accent, 'a400') !default;
-$color-accent-darker:       material-color($color-name-accent, 'a700') !default;
-$color-accent-light:        material-color($color-name-accent, 'a100') !default;
-$color-accent-text:         #fff !default; // Icons color
+$color-accent:                  material-color($color-name-accent, 'a200') !default;
+$color-accent-dark:             material-color($color-name-accent, 'a400') !default;
+$color-accent-darker:           material-color($color-name-accent, 'a700') !default;
+$color-accent-light:            material-color($color-name-accent, 'a100') !default;
+$color-accent-text:             #fff !default; // Icons color
 
-$color-success:             material-color($color-name-success, '500') !default;
-$color-success-dark:        material-color($color-name-success, '700') !default;
-$color-success-darker:      material-color($color-name-success, '800') !default;
-$color-success-darkest:     material-color($color-name-success, '900') !default;
-$color-success-light:       material-color($color-name-success, '300') !default;
-$color-success-lighter:     material-color($color-name-success, '100') !default;
-$color-success-lightest:    material-color($color-name-success, '50') !default;
-$color-success-text:        #fff !default; // Icons color
+$color-success:                 material-color($color-name-success, '500') !default;
+$color-success-dark:            material-color($color-name-success, '700') !default;
+$color-success-darker:          material-color($color-name-success, '800') !default;
+$color-success-darkest:         material-color($color-name-success, '900') !default;
+$color-success-light:           material-color($color-name-success, '300') !default;
+$color-success-lighter:         material-color($color-name-success, '100') !default;
+$color-success-lightest:        material-color($color-name-success, '50') !default;
+$color-success-text:            #fff !default; // Icons color
 
-$color-info:                material-color($color-name-info, '500') !default;
-$color-info-dark:           material-color($color-name-info, '700') !default;
-$color-info-darker:         material-color($color-name-info, '800') !default;
-$color-info-darkest:        material-color($color-name-info, '900') !default;
-$color-info-light:          material-color($color-name-info, '300') !default;
-$color-info-lighter:        material-color($color-name-info, '100') !default;
-$color-info-lightest:       material-color($color-name-info, '50') !default;
-$color-info-text:           #fff !default; // Icons color
+$color-info:                    material-color($color-name-info, '500') !default;
+$color-info-dark:               material-color($color-name-info, '700') !default;
+$color-info-darker:             material-color($color-name-info, '800') !default;
+$color-info-darkest:            material-color($color-name-info, '900') !default;
+$color-info-light:              material-color($color-name-info, '300') !default;
+$color-info-lighter:            material-color($color-name-info, '100') !default;
+$color-info-lightest:           material-color($color-name-info, '50') !default;
+$color-info-text:               #fff !default; // Icons color
 
-$color-warning:             material-color($color-name-warning, '500') !default;
-$color-warning-dark:        material-color($color-name-warning, '700') !default;
-$color-warning-darker:      material-color($color-name-warning, '800') !default;
-$color-warning-darkest:     material-color($color-name-warning, '900') !default;
-$color-warning-light:       material-color($color-name-warning, '300') !default;
-$color-warning-lighter:     material-color($color-name-warning, '100') !default;
-$color-warning-lightest:    material-color($color-name-warning, '50') !default;
-$color-warning-text:        #fff !default; // Icons color
+$color-warning:                 material-color($color-name-warning, '500') !default;
+$color-warning-dark:            material-color($color-name-warning, '700') !default;
+$color-warning-darker:          material-color($color-name-warning, '800') !default;
+$color-warning-darkest:         material-color($color-name-warning, '900') !default;
+$color-warning-light:           material-color($color-name-warning, '300') !default;
+$color-warning-lighter:         material-color($color-name-warning, '100') !default;
+$color-warning-lightest:        material-color($color-name-warning, '50') !default;
+$color-warning-text:            #fff !default; // Icons color
 
-$color-error:               material-color($color-name-error, '500') !default;
-$color-error-dark:          material-color($color-name-error, '700') !default;
-$color-error-darker:        material-color($color-name-error, '800') !default;
-$color-error-darkest:       material-color($color-name-error, '900') !default;
-$color-error-light:         material-color($color-name-error, '300') !default;
-$color-error-lighter:       material-color($color-name-error, '100') !default;
-$color-error-lightest:      material-color($color-name-error, '50') !default;
-$color-error-text:          #fff !default; // Icons color
+$color-error:                   material-color($color-name-error, '500') !default;
+$color-error-dark:              material-color($color-name-error, '700') !default;
+$color-error-darker:            material-color($color-name-error, '800') !default;
+$color-error-darkest:           material-color($color-name-error, '900') !default;
+$color-error-light:             material-color($color-name-error, '300') !default;
+$color-error-lighter:           material-color($color-name-error, '100') !default;
+$color-error-lightest:          material-color($color-name-error, '50') !default;
+$color-error-text:              #fff !default; // Icons color
 
-$color-text:                material-color('grey', '900') !default;
-$color-text-minor:          material-color('grey', '600') !default; // Icons color
-$color-text-hint:           material-color('grey', '400') !default;
-$color-text-disabled:       material-color('grey', '400') !default;
-$color-text-link:           $color-primary-dark !default;
-$color-text-link-disabled:  $color-primary-lighter !default;
+$color-text:                    material-color('grey', '900') !default;
+$color-text-minor:              material-color('grey', '600') !default; // Icons color
+$color-text-hint:               material-color('grey', '400') !default;
+$color-text-disabled:           material-color('grey', '400') !default;
+$color-text-link:               $color-primary-dark !default;
+$color-text-link-disabled:      $color-primary-lighter !default;
 
 $color-text-primary:            $color-primary-dark !default;
 $color-text-primary-disabled:   $color-primary-lighter !default;
@@ -92,7 +92,7 @@ $color-text-error:              $color-error-dark !default;
 $color-text-error-disabled:     $color-error-lighter !default;
 
 $color-background:              #fff !default;
-$color-background-minor:        material-color('grey', '100') !default;
+$color-background-minor:        material-color('grey', '200') !default;
 $color-background-primary:      $color-primary-lightest !default;
 $color-background-secondary:    $color-secondary-lightest !default;
 $color-background-success:      $color-success-lightest !default;
@@ -103,30 +103,8 @@ $color-background-error:        $color-error-lightest !default;
 $color-divider:                 material-color('grey', '300') !default;
 
 // Element sizes
-$drawer-size-width:         256px !default;
-$toolbar-size-height:       64px !default;
-
-
-// Font sizes
-// TODO size of roboto
-$font-h1-size:              2em !default;
-$font-h1-margin:            .67em 0 !default;
-
-$font-h2-size:              1.5em !default;
-$font-h2-margin:            .83em 0 !default;
-
-$font-h3-size:              1.17em !default;
-$font-h3-margin:            1em 0 !default;
-
-$font-h4-size:              1em !default;
-$font-h4-margin:            1.33em 0 !default;
-
-$font-h5-size:              .83em !default;
-$font-h5-margin:            1.67em 0 !default;
-
-$font-h6-size:              .75em !default;
-$font-h6-margin:            2.33em 0 !default;
-
+$drawer-size-width:             256px !default;
+$toolbar-size-height:           64px !default;
 
 // Media query limits
-$phone-width-max:           '640px' !default;
+$phone-width-max:               '640px' !default;

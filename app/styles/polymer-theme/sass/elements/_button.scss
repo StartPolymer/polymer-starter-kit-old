@@ -1,0 +1,101 @@
+.button {
+  @extend %text_button;
+
+  &_primary {
+    color: $color-text-primary;
+
+    &_disabled {
+      background: $color-background-minor;
+      color: material-color($color-name-primary, '200');
+    }
+
+    &_raised {
+      background: $color-primary;
+      color: $color-primary-text;
+    }
+  }
+
+  &_secondary {
+    color: $color-text-secondary;
+
+    &_disabled {
+      background: $color-background-minor;
+      color: material-color($color-name-secondary, '200');
+    }
+
+    &_raised {
+      background: $color-secondary;
+      color: $color-secondary-text;
+    }
+  }
+
+  &_success {
+    color: $color-text-success;
+
+    &_disabled {
+      background: $color-background-minor;
+      color: material-color($color-name-success, '200');
+    }
+
+    &_raised {
+      background: $color-success;
+      color: $color-success-text;
+    }
+  }
+
+  &_info {
+    color: $color-text-info;
+
+    &_disabled {
+      background: $color-background-minor;
+      color: material-color($color-name-info, '200');
+    }
+
+    &_raised {
+      background: $color-info;
+      color: $color-info-text;
+    }
+  }
+
+  &_warning {
+    color: $color-text-warning;
+
+    &_disabled {
+      background: $color-background-minor;
+      color: material-color($color-name-warning, '300');
+    }
+
+    &_raised {
+      background: $color-warning;
+      color: $color-warning-text;
+    }
+  }
+
+  &_error {
+    color: $color-text-error;
+
+    &_disabled {
+      background: $color-background-minor;
+      color: material-color($color-name-error, '200');
+    }
+
+    &_raised {
+      background: $color-error;
+      color: $color-error-text;
+    }
+  }
+
+  &_link {
+    color: $color-text-link;
+
+    &_disabled {
+      background: transparent;
+      color: $color-text-link-disabled;
+    }
+
+    &_raised {
+      background: transparent;
+      color: $color-text-link;
+    }
+  }
+}

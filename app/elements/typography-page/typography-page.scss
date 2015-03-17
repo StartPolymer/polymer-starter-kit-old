@@ -1,0 +1,30 @@
+.img_typography {
+  width: 760px;
+  margin-top: 19px;
+}
+
+.page__section_grey {
+  background: #eee;
+  height: 570px;
+}
+
+.height {
+  &_1 {
+    height: 40px;
+  }
+
+  &_2 {
+    height: 46px;
+  }
+}
+
+.text {
+  background: #fff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}

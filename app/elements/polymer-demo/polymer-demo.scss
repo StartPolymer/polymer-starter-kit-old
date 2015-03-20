@@ -1,45 +1,21 @@
-$toolbar-size-height:       64px;
-$phone-width-max:           '640px';
+// Roboto Font Combinations
+// https://github.com/StartPolymer/polymer-theme/wiki/Roboto-Font-Combinations
+$font-name-heading:     'roboto';
+$font-lang:             'en';
 
-.pages /deep/ .page {
-  padding: 16px;
+@import 'bower_components/polymer-theme/sass/base';
 
-  &_buttons,
-  &_action-buttons,
-  &_icon-buttons {
-    padding-top: calc((100vh - #{$toolbar-size-height} - 16px)/4);
-  }
+body {
+  @extend %text_body_1;
+  font-family: $font-body;
 
-  @media all and (max-width: $phone-width-max) {
-    padding: 8px;
-  }
-
-  &__section {
-    padding-bottom: 24px;
-
-    @media all and (max-width: $phone-width-max) {
-      padding-bottom: 16px;
+  /deep/ {
+    h1,
+    h2,
+    h3 {
+      font-family: $font-heading;
     }
-
-    .button,
-    .icon-button {
-      margin-bottom: 5px;
-    }
-
-    .fab[mini] {
-      margin-right: 7px;
-    }
-
-    &_action-buttons {
-      width: 220px;
-    }
-
-    &_icon-buttons {
-      width: 250px;
-    }
-  }
-
-  &__title {
-    margin: 24px 0;
   }
 }
+
+@import 'themes';

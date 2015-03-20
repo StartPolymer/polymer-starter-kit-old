@@ -1,0 +1,43 @@
+.page {
+  padding: 16px;
+
+  &_buttons,
+  &_action-buttons,
+  &_icon-buttons {
+    padding-top: calc((100vh - #{$toolbar-size-height} - 416px)/3);
+  }
+
+  @media all and (max-width: $phone-width-max) {
+    padding: 8px;
+  }
+
+  &__section {
+    padding-bottom: 24px;
+
+    @media all and (max-width: $phone-width-max) {
+      padding-bottom: 16px;
+    }
+
+    .button,
+    .icon-button {
+      margin-bottom: 5px;
+    }
+
+    .fab[mini] {
+      margin-right: 7px;
+    }
+
+    &_action-buttons {
+      width: 220px;
+    }
+
+    &_icon-buttons {
+      width: 250px;
+    }
+  }
+
+  &__title {
+    @extend %text_title;
+    margin: 24px 0;
+  }
+}

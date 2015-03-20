@@ -12,15 +12,18 @@
 <link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html"/>
 <link rel="import" href="/bower_components/paper-item/paper-item.html"/>
 
-<link rel="import" href="../buttons-page/buttons-page.html"/>
 <link rel="import" href="../action-buttons-page/action-buttons-page.html"/>
+<link rel="import" href="../buttons-page/buttons-page.html"/>
+<link rel="import" href="../custom-icons/custom-icons.html"/>
+<link rel="import" href="../external-links/external-links.html"/>
 <link rel="import" href="../icon-buttons-page/icon-buttons-page.html"/>
+<link rel="import" href="../themes-menu/themes-menu.html"/>
 <link rel="import" href="../typography-page/typography-page.html"/>
 
-<polymer-element name="polymer-demo" noscript>
-<template>
+<link rel="stylesheet" href="polymer-demo.css" shim-shadowdom>
 
-  <link rel="stylesheet" href="polymer-demo.css">
+<polymer-element name="polymer-demo">
+<template>
 
   <!-- Use CSS media queries for responsiveness-->
   <!-- https://developers.google.com/web/fundamentals/layouts/rwd-fundamentals/use-media-queries-->
@@ -29,47 +32,42 @@
   <core-drawer-panel>
     <core-header-panel class="drawer" drawer>
 
-      <core-toolbar class="drawer__toolbar">
-        <span layout horizontal center hidden?="{{isPhoneSize}}">
-          <core-icon icon="custom-icons:start-polymer"></core-icon>
-          Polymer Starter Kit
-        </span>
-        <span hidden?="{{!isPhoneSize}}">
-          Menu
-        </span>
+      <core-toolbar class="drawer__toolbar brand brand_drawer_toolbar" layout horizontal center>
+        <core-icon class="brand__logo" icon="custom-icons:start-polymer"></core-icon>
+        <span class="brand__text">Polymer Starter Kit</span>
       </core-toolbar>
 
       <div class="drawer__content">
         <!-- Navigation links-->
         <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav-->
-        <nav><core-selector class="drawer__nav" selected="{{route}}" valueattr="data-route">
-          <paper-item data-route="home">
+        <nav><core-selector class="drawer__nav menu" selected="{{route}}" valueattr="data-route">
+          <paper-item class="menu__item menu__item_primary" data-route="buttons">
             <a href="#" layout horizontal center>
               <!-- Hack for fit <a> element-->
               <!-- https://github.com/Polymer/paper-item/issues/14-->
               <span fit></span>
-              <core-icon icon="chevron-right"></core-icon>
+              <core-icon class="menu__icon" icon="chevron-right"></core-icon>
               Buttons
             </a>
           </paper-item>
-          <paper-item data-route="action-buttons">
+          <paper-item class="menu__item menu__item_primary" data-route="action-buttons">
             <a href="#" layout horizontal center>
               <span fit></span>
-              <core-icon icon="chevron-right"></core-icon>
+              <core-icon class="menu__icon" icon="chevron-right"></core-icon>
               Action Buttons
             </a>
           </paper-item>
-          <paper-item data-route="icon-buttons">
+          <paper-item class="menu__item menu__item_primary" data-route="icon-buttons">
             <a href="#" layout horizontal center>
               <span fit></span>
-              <core-icon icon="chevron-right"></core-icon>
+              <core-icon class="menu__icon" icon="chevron-right"></core-icon>
               Icon Buttons
             </a>
           </paper-item>
-          <paper-item data-route="typography">
+          <paper-item class="menu__item menu__item_primary" data-route="typography">
             <a href="#" layout horizontal center>
               <span fit></span>
-              <core-icon icon="chevron-right"></core-icon>
+              <core-icon class="menu__icon" icon="chevron-right"></core-icon>
               Typography
             </a>
           </paper-item>
@@ -89,17 +87,15 @@
 
       <core-toolbar class="main__toolbar">
         <paper-icon-button icon="menu" core-drawer-toggle></paper-icon-button>
-        <span layout horizontal center flex hidden?="{{!isPhoneSize}}">
-          <core-icon icon="custom-icons:start-polymer"></core-icon>
-          Polymer Starter Kit
-        </span>
-        <span flex hidden?="{{isPhoneSize}}"></span>
+        <header flex>
+          <h1 class="main__title">{{route}}</h1>
+        </header>
         <external-links hidden?="{{isPhoneSize}}"></external-links>
       </core-toolbar>
 
       <div class="main__content">
         <core-animated-pages class="pages" selected="{{route}}" valueattr="data-route" transitions="slide-from-right">
-          <buttons-page data-route="home"></buttons-page>
+          <buttons-page data-route="buttons"></buttons-page>
           <action-buttons-page data-route="action-buttons"></action-buttons-page>
           <icon-buttons-page data-route="icon-buttons"></icon-buttons-page>
           <typography-page data-route="typography"></typography-page>
@@ -114,4 +110,7 @@
   </core-drawer-panel>
 
 </template>
+
+<script src="polymer-demo.js"></script>
+
 </polymer-element>

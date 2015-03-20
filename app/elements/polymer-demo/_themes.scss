@@ -1,0 +1,175 @@
+.polymer-theme-red-amber {
+  $color-name-primary:    'red';
+  $color-name-secondary:  'amber';
+  // Other variables are in this files
+  // bower_components/polymer-theme/sass/variables
+  @import 'bower_components/polymer-theme/sass/variables';
+  $color-text-secondary-disabled-2: $color-secondary-4;
+  @import 'theme-base';
+}
+
+.polymer-theme-pink-lime {
+  $color-name-primary:    'pink';
+  $color-name-secondary:  'lime';
+  @import 'bower_components/polymer-theme/sass/variables';
+  $color-accent:                    $color-accent-4;
+  $color-text-secondary-disabled-2: $color-secondary-5;
+  @import 'theme-base';
+}
+
+.polymer-theme-purple-lime {
+  $color-name-primary:    'purple';
+  $color-name-secondary:  'lime';
+  @import 'bower_components/polymer-theme/sass/variables';
+  $color-accent:                    $color-accent-4;
+  $color-text-secondary-disabled-2: $color-secondary-5;
+  @import 'theme-base';
+}
+
+.polymer-theme-deep-purple-light-blue {
+  $color-name-primary:    'deep-purple';
+  $color-name-secondary:  'light-blue';
+  @import 'theme-base';
+}
+
+.polymer-theme-indigo-pink {
+  $color-name-primary:    'indigo';
+  $color-name-secondary:  'pink';
+  @import 'theme-base';
+}
+
+.polymer-theme-blue-pink {
+  $color-name-primary:    'blue';
+  $color-name-secondary:  'pink';
+  @import 'theme-base';
+}
+
+.polymer-theme-light-blue-lime {
+  $color-name-primary:    'light-blue';
+  $color-name-secondary:  'lime';
+  @import 'bower_components/polymer-theme/sass/variables';
+  $color-accent:                    $color-accent-4;
+  $color-text-secondary-disabled-2: $color-secondary-5;
+  @import 'theme-base';
+}
+
+.polymer-theme-cyan-orange {
+  $color-name-primary:    'cyan';
+  $color-name-secondary:  'orange';
+  @import 'theme-base';
+}
+
+.polymer-theme-teal-amber {
+  $color-name-primary:    'teal';
+  $color-name-secondary:  'amber';
+  $color-name-text:       'teal';
+  @import 'bower_components/polymer-theme/sass/variables';
+  $color-text-secondary-disabled-2: $color-secondary-4;
+  @import 'theme-base';
+}
+
+.polymer-theme-green-lime {
+  $color-name-primary:    'green';
+  $color-name-secondary:  'lime';
+  @import 'bower_components/polymer-theme/sass/variables';
+  $color-accent:                    $color-accent-4;
+  $color-text-secondary-disabled-2: $color-secondary-5;
+  @import 'theme-base';
+}
+
+.polymer-theme-light-green-deep-orange {
+  $color-name-primary:    'light-green';
+  $color-name-secondary:  'deep-orange';
+  @import 'bower_components/polymer-theme/sass/variables';
+  $color-text-primary:              $color-text;
+  $color-text-primary-disabled:     $color-text-disabled;
+  $color-text-primary-disabled-2:   $color-text-disabled-2;
+  $color-text-link:                 $color-text-minor;
+  $color-text-link-disabled:        $color-text-disabled;
+  @import 'theme-base';
+}
+
+.polymer-theme-lime-light-blue {
+  $color-name-primary:    'lime';
+  $color-name-secondary:  'light-blue';
+  @import 'bower_components/polymer-theme/sass/variables';
+  $color-text-primary:              $color-text;
+  $color-text-primary-disabled:     $color-text-disabled;
+  $color-text-primary-disabled-2:   $color-text-disabled-2;
+  $color-text-link:                 $color-text-minor;
+  $color-text-link-disabled:        $color-text-disabled;
+  @import 'theme-base';
+}
+
+.polymer-theme-yellow-orange {
+  $color-name-primary:    'yellow';
+  $color-name-secondary:  'orange';
+  @import 'bower_components/polymer-theme/sass/variables';
+  //$color-accent:                    $color-accent-4;
+  $color-text-primary:              $color-text;
+  $color-text-primary-disabled:     $color-text-disabled;
+  $color-text-primary-disabled-2:   $color-text-disabled-2;
+  $color-text-link:                 $color-text-minor;
+  $color-text-link-disabled:        $color-text-disabled;
+  @import 'theme-base';
+}
+
+.polymer-theme-amber-indigo {
+  $color-name-primary:    'amber';
+  $color-name-secondary:  'indigo';
+  @import 'bower_components/polymer-theme/sass/variables';
+  $color-text-primary:              $color-text;
+  $color-text-primary-disabled:     $color-text-disabled;
+  $color-text-primary-disabled-2:   $color-text-disabled-2;
+  $color-text-link:                 $color-text-minor;
+  $color-text-link-disabled:        $color-text-disabled;
+  @import 'theme-base';
+}
+
+.polymer-theme-orange-light-blue {
+  $color-name-primary:    'orange';
+  $color-name-secondary:  'light-blue';
+  @import 'bower_components/polymer-theme/sass/variables';
+  $color-text-primary:              $color-text;
+  $color-text-primary-disabled:     $color-text-disabled;
+  $color-text-primary-disabled-2:   $color-text-disabled-2;
+  $color-text-link:                 $color-text-minor;
+  $color-text-link-disabled:        $color-text-disabled;
+  @import 'theme-base';
+}
+
+.polymer-theme-deep-orange-blue {
+  $color-name-primary:    'deep-orange';
+  $color-name-secondary:  'blue';
+  @import 'theme-base';
+}
+
+.polymer-theme-brown-amber {
+  $color-name-primary:    'brown';
+  $color-name-secondary:  'amber';
+  $color-name-text:       'brown';
+  @import 'bower_components/polymer-theme/sass/variables';
+  $color-text-secondary-disabled-2: $color-secondary-4;
+  @import 'theme-base';
+}
+
+.polymer-theme-grey-lime {
+  $color-name-primary:    'grey';
+  $color-name-secondary:  'lime';
+  @import 'bower_components/polymer-theme/sass/variables';
+  $color-accent:                    $color-accent-4;
+  $color-text-primary:              $color-text;
+  $color-text-primary-disabled:     $color-text-disabled;
+  $color-text-primary-disabled-2:   $color-text-disabled-2;
+  $color-text-secondary-disabled-2: $color-secondary-5;
+  $color-text-link:                 $color-text-minor;
+  $color-text-link-disabled:        $color-text-disabled;
+  @import 'theme-base';
+}
+
+.polymer-theme-blue-grey-pink {
+  $color-name-primary:    'blue-grey';
+  $color-name-secondary:  'pink';
+  $color-name-text:       'blue-grey';
+  @import 'theme-base';
+}

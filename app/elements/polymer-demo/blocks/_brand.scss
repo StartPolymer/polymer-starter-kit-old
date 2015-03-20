@@ -1,0 +1,15 @@
+.brand {
+  &_drawer_toolbar {
+    background: $color-background;
+
+    .brand__logo {
+      color: $color-primary;
+      margin-right: 0;
+    }
+
+    .brand__text {
+      @extend %text_title;
+      color: $color-text-minor;
+    }
+  }
+}

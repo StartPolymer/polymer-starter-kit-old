@@ -7,9 +7,9 @@
 
     <paper-dropdown-menu class="dropdown-menu dropdown-menu_primary" label="Select Theme">
       <paper-dropdown class="dropdown">
-        <core-menu valueattr="data-theme" on-core-select="{{themeSelected}}" class="menu">
+        <core-menu class="menu" valueattr="data-theme" on-core-select="{{themeSelected}}" class="menu">
           <template repeat="{{theme, i in themes}}">
-            <paper-item data-theme="{{theme.id}}">{{theme.name}}</paper-item>
+            <paper-item class="menu__item menu__item_primary" data-theme="{{theme.id}}">{{theme.name}}</paper-item>
           </template>
         </core-menu>
       </paper-dropdown>

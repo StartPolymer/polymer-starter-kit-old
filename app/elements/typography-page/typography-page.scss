@@ -1,20 +1,21 @@
-.img_typography {
-  width: 760px;
-  margin-top: 19px;
-}
+.page {
+  &__height {
+    &_1 {
+      height: 40px;
+    }
 
-.page__section_grey {
-  background: #eee;
-  height: 570px;
-}
-
-.height {
-  &_1 {
-    height: 40px;
+    &_2 {
+      height: 46px;
+    }
   }
 
-  &_2 {
-    height: 46px;
+  &__img_typography {
+    margin-top: 19px;
+    width: 760px;
+  }
+
+  &__section_grey {
+    background: #eee;
   }
 }
 

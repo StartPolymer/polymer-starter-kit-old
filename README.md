@@ -16,9 +16,7 @@ Following [The 10 Commandments of Modern Web Application](https://gist.github.co
 
 - Clean [index.html](https://github.com/StartPolymer/polymer-starter-kit/blob/master/app/index.html)
 - [Gulp tasks](https://github.com/StartPolymer/polymer-starter-kit/tree/master/gulp/tasks) per file
-- [Demo element](https://github.com/StartPolymer/polymer-starter-kit/blob/master/app/elements/psk-elements/demo-element/demo-element.html)
-based on [BEM Methodology](http://getbem.com)
-- Using [Polymer Theme](https://github.com/StartPolymer/polymer-theme)
+- Using [Polymer Demo](https://github.com/StartPolymer/polymer-demo) element with [Polymer Theme](https://github.com/StartPolymer/polymer-theme) based on [BEM Methodology](http://getbem.com)
 - [Sass](http://sass-lang.com) CSS Preprocessor with [Ruby](https://www.ruby-lang.org)
  - PSK need CSS Preprocessor for [Variables](http://sass-guidelin.es/#variables),
  [Loops](http://sass-guidelin.es/#loops),

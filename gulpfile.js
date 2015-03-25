@@ -34,6 +34,10 @@ gulp.task('styles',
 gulp.task('styles:elements',
   require('./gulp/tasks/styles-sass')(gulp, plugins, config, 'elements'));
 
+// Compile and Automatically Prefix Stylesheets for build a element
+gulp.task('styles-build-element',
+  require('./gulp/tasks/styles-sass')(gulp, plugins, config, ''));
+
 // Views with Jade
 gulp.task('views', getTask('views-jade'));
 
@@ -78,6 +82,9 @@ gulp.task('clean', require('del').bind(null, ['.tmp', 'dist']));
 // Copy All Files At The Root Level (app)
 gulp.task('copy', getTask('copy'));
 
+// Copy files only for build a element
+gulp.task('copy-build-element', getTask('copy-build-element'));
+
 // Gzip text files
 gulp.task('gzip', getTask('gzip'));
 
@@ -95,6 +102,17 @@ gulp.task('default', ['clean'], function (cb) {
     ['jshint', 'images', 'fonts', 'html', 'styles:elements'],
     'vulcanize',
     'revreplace',
+//    'gzip',
+//    'build-size',
+    cb);
+});
+
+// Build Production Files for element
+gulp.task('build:el', ['clean'], function (cb) {
+  require('run-sequence')(
+//    'views',
+    ['copy-build-element'],
+    ['jshint', 'styles-build-element'],
 //    'gzip',
 //    'build-size',
     cb);

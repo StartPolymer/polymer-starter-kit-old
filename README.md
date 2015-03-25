@@ -63,6 +63,10 @@ sudo gem install sass
 
 ## Usage
 
+### [Fork](https://github.com/StartPolymer/polymer-starter-kit/fork) this repository
+
+or
+
 ### Clone this repository to separate branch `psk`
 
 ```sh
@@ -101,10 +105,19 @@ gulp serve
 gulp serve:dist
 ```
 
-### Build
+### Build the app
 
 ```sh
 gulp
+```
+
+### Build a polymer element
+
+Check out the [file structure](https://github.com/StartPolymer/polymer-demo/tree/develop/app/elements)
+of Polymer Demo element
+
+```sh
+gulp build:el
 ```
 
 ### Explain `psk-` prefix

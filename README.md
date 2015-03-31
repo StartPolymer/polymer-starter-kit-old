@@ -1,5 +1,7 @@
 # Polymer Starter Kit
 
+[![Join the chat at https://gitter.im/StartPolymer/polymer-starter-kit](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/StartPolymer/polymer-starter-kit?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Polymer Starter Kit is a boilerplate for web development using Web Components and modern tools.
 
 Keeping up to date with

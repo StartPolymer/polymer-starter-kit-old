@@ -67,6 +67,9 @@ sudo gem install sass
 
 ### [Fork](https://github.com/StartPolymer/polymer-starter-kit/fork) this repository
 
+[Syncing a fork](https://help.github.com/articles/syncing-a-fork/)
+of a repository to keep it up-to-date with the upstream repository.
+
 or
 
 ### Clone this repository to separate branch `psk`
